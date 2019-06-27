@@ -1,12 +1,461 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Dotfolio</title>
+
+        <link href="ref/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css?family=Lato:400,300,700" rel="stylesheet" type="text/css" />
+        <link href="ref/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" />
+        <link href="ref/vendor/animate.css" rel="stylesheet" />
+        <link href="ref/vendor/fancybox/jquery.fancybox.css" rel="stylesheet" />
+        <link href="ref/vendor/owl.carousel/owl-carousel/owl.carousel.css" rel="stylesheet" />
+        <link href="ref/vendor/owl.carousel/owl-carousel/owl.theme.css" rel="stylesheet" />
+        <link href="ref/css/styles.css" rel="stylesheet" />
+    </head>
+    <body class="">
+        <div class="loader-container" id="page-loader">
+            <div class="loading-wrapper loading-wrapper-hide">
+                <div class="loader-animation" id="loader-animation">
+                    <svg class="svg-loader" width="100" height="100">
+                        <circle cx="50" cy="50" r="25" />
+                    </svg>
+                </div>
+                <div class="loader-name" id="loader-name">
+                    <img src="ref/img/logo-negative.png" alt="" />
+                </div>
+            </div>
+        </div>
+
+        <div
+            id="back-to-top"
+            class="back-to-top back-to-top-hide"
+            data-toggle="tooltip"
+            data-placement="left"
+            title="Back to Top"
+        >
+            <i class="fa fa-angle-up"></i>
+        </div>
+
+        <header id="header">
+            <nav class="navbar">
+                <div class="container">
+                    <div class="menu-wrapper">
+                        <div class="navbar-header">
+                            <button
+                                type="button"
+                                class="navbar-toggle"
+                                data-toggle="collapse"
+                                data-target=".navbar-main-collapse"
+                            >
+                                <i class="fa fa-bars"></i>
+                            </button>
+                            <a class="navbar-brand" href="index.html">
+                                <img src="ref/img/logo.png" alt="" />
+                            </a>
+                        </div>
+
+                        <div class="collapse navbar-collapse navbar-right navbar-main-collapse" id="#options">
+                            <ul class="nav navbar-nav">
+                                <li>
+                                    <a href="#home">Home</a>
+                                </li>
+                                <li>
+                                    <a href="#about">About</a>
+                                </li>
+                                <li>
+                                    <a href="#portfolio">Portfolio</a>
+                                </li>
+                                <li>
+                                    <a href="#contact">Contact</a>
+                                </li>
+                            </ul>
+                            <ul class="social-header">
+                                <li>
+                                    <a
+                                        href="#"
+                                        class="btn-wapasha"
+                                        data-toggle="tooltip"
+                                        data-placement="top"
+                                        title="Facebook"
+                                        ><i class="fa fa-facebook"></i
+                                    ></a>
+                                </li>
+                                <li>
+                                    <a
+                                        href="#"
+                                        class="btn-wapasha"
+                                        data-toggle="tooltip"
+                                        data-placement="bottom"
+                                        title="Twitter"
+                                        ><i class="fa fa-twitter"></i
+                                    ></a>
+                                </li>
+                                <li>
+                                    <a
+                                        href="#"
+                                        class="btn-wapasha"
+                                        data-toggle="tooltip"
+                                        data-placement="top"
+                                        title="Behance"
+                                        ><i class="fa fa-behance"></i
+                                    ></a>
+                                </li>
+                                <li>
+                                    <a
+                                        href="#"
+                                        class="btn-wapasha"
+                                        data-toggle="tooltip"
+                                        data-placement="bottom"
+                                        title="Dribbble"
+                                        ><i class="fa fa-dribbble"></i
+                                    ></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <section class="main-content container">
+            <div class="isotope-filter" id="isotope-filter">
+                <div
+                    class="element element-content element-portfolio-filter portfolio webdesign editorial branding featured"
+                >
+                    <div class="element-wrapper">
+                        <ul class="portfolio-filter-header">
+                            <li><a href="#featured" class="isotope-link">Featured</a></li>
+                            <li><a href="#webdesign" class="isotope-link">Web Design</a></li>
+                            <li><a href="#editorial" class="isotope-link">Editorial</a></li>
+                            <li><a href="#branding" class="isotope-link">Branding</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="element element-profile home">
+                    <div class="element-wrapper">
+                        <div class="profile" id="profile">
+                            <div class="profile-mask">
+                                <div class="profile-mask-content" id="profile-mask-content">
+                                    <h1 class="title1 profile-title">James Rex</h1>
+                                    <p class="profile-title2">Designer & Developer</p>
+                                </div>
+                            </div>
+                            <div class="profile-picture" id="profile-picture">
+                                <img src="ref/img/intro1.jpg" class="responsive-image" alt="" />
+                            </div>
+                            <div class="profile-intro" id="profile-intro">
+                                <div class="profile-intro-wrapper">
+                                    <h2 class="profile-intro-title">Hello, i'm James Rex!</h2>
+                                    <h3 class="profile-intro-subtitle">Designer and Developer</h3>
+                                    <p>
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam et turpis.
+                                        Vestibulum molestie velit, eu dapibus purus interdum id.
+                                    </p>
+                                    <p class="profile-info">
+                                        <i class="fa fa-envelope-o"></i>&nbsp;&nbsp; jamesrex@dotrex.co
+                                    </p>
+                                    <p class="profile-info"><i class="fa fa-phone"></i>&nbsp;&nbsp; +123 456 789 111</p>
+                                    <div class="profile-intro-button">
+                                        <a
+                                            href="#portfolio"
+                                            class="btn btn-default btn-negative btn-nina isotope-link"
+                                            data-text="see my works"
+                                            ><span>s</span><span>e</span><span>e</span> <span>m</span><span>y</span>
+                                            <span>w</span><span>o</span><span>r</span><span>k</span><span>s</span>
+                                            <span><i class="fa fa-long-arrow-right"></i></span
+                                        ></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="element element-portfolio-item element-portfolio-item1 home portfolio featured branding">
+                    <div class="element-wrapper">
+                        <div class="portfolio-item">
+                            <a
+                                href="single-portfolio.html"
+                                class="portfolio-thumbnail"
+                                style="background-image: url('ref/img/portfolio/p7.jpg');"
+                            >
+                                <div class="portfolio-description-wrapper">
+                                    <div class="portfolio-description">
+                                        <h2 class="portfolio-title">
+                                            The Shopping Bag
+                                            <span class="portfolio-item-ico"
+                                                ><i class="fa fa-long-arrow-right"></i
+                                            ></span>
+                                        </h2>
+                                        <span class="see-more">Branding / Featured</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="element element-big-content about">
+                    <div class="element-wrapper">
+                        <div class="element-big-content-ico"><img src="ref/img/ico6b.svg" alt="" /></div>
+                        <h2 class="element-big-content-title">Hello, i'm <strong>James Rex!</strong></h2>
+                        <p>
+                            Description id elit non mi porta gravida at eget metus. Donec sed odio dui. Maecenas
+                            faucibus mollis interdum. I want to be like a <strong>digital expert</strong> offering
+                            services such as <strong>design</strong> and <strong>programming</strong>.
+                        </p>
+                        <p>Vivamus sagittis lacus vel augue laoreet rutrum faucibus scelerisque nisl consectetur.</p>
+                    </div>
+                </div>
+
+                <div class="element element-content element-services  home about">
+                    <div class="element-wrapper">
+                        <a href="#contact" class="element-box element-box-interative isotope-link">
+                            <div class="element-box-bg">
+                                <h2 class="element-box-title"><span>Services</span></h2>
+                                <span class="element-box-ico"
+                                    ><span class="see-more">Get in Touch</span> &nbsp;<i
+                                        class="fa fa-long-arrow-right"
+                                    ></i
+                                ></span>
+                                <div class="service-item">
+                                    <div class="service-ico"><img src="ref/img/ico3.svg" alt="" /></div>
+                                    <h2 class="service-title">Web Development</h2>
+                                    <div class="service-description">
+                                        <p>
+                                            Lorem ipsum dolor sit amet, consetetur sed diam nonumy eirmod tempor
+                                            invidunt..
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="element element-about-picture about">
+                    <div class="element-wrapper">
+                        <img src="ref/img/about-picture2.jpg" class="responsive-image" alt="" />
+                    </div>
+                </div>
+
+                <div class="element element-content-3 element-services about">
+                    <div class="element-wrapper">
+                        <a href="#contact" class="element-box element-box-interative isotope-link">
+                            <div class="element-box-bg">
+                                <h2 class="element-box-title"><span>Services</span></h2>
+                                <span class="element-box-ico"
+                                    ><span class="see-more">Get in Touch</span> &nbsp;<i
+                                        class="fa fa-long-arrow-right"
+                                    ></i
+                                ></span>
+                                <div class="service-item">
+                                    <div class="service-ico"><img src="ref/img/ico2.svg" alt="" /></div>
+                                    <h2 class="service-title">SEO Campaings</h2>
+                                    <div class="service-description">
+                                        <p>
+                                            Lorem ipsum dolor sit amet, consetetur sed diam nonumy eirmod tempor
+                                            invidunt..
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="element element-content element-services home about">
+                    <div class="element-wrapper">
+                        <a href="#contact" class="element-box element-box-interative isotope-link">
+                            <div class="element-box-bg">
+                                <h2 class="element-box-title"><span>Services</span></h2>
+                                <span class="element-box-ico"
+                                    ><span class="see-more">Get in Touch</span> <i class="fa fa-long-arrow-right"></i
+                                ></span>
+                                <div class="service-item">
+                                    <div class="service-ico"><img src="ref/img/ico1.svg" alt="" /></div>
+                                    <h2 class="service-title">Graphic Design</h2>
+                                    <div class="service-description">
+                                        <p>
+                                            Lorem ipsum dolor sit amet, consetetur sed diam nonumy eirmod tempor
+                                            invidunt..
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="element element-big-content element-contact-form contact">
+                    <div class="element-wrapper">
+                        <p>Please fill the form to get in touch. I will answer as fast as possible.</p>
+                        <form id="contactForm">
+                            <div class="form-group">
+                                <input
+                                    type="text"
+                                    class="form-control required"
+                                    id="name"
+                                    name="name"
+                                    placeholder="Name*"
+                                    required
+                                />
+                            </div>
+                            <div class="form-group">
+                                <input
+                                    type="email"
+                                    class="form-control required"
+                                    id="email"
+                                    name="email"
+                                    placeholder="Email"
+                                    required
+                                />
+                            </div>
+                            <div class="form-group">
+                                <input
+                                    type="text"
+                                    class="form-control required"
+                                    id="subject"
+                                    name="subject"
+                                    placeholder="Subject"
+                                    required
+                                />
+                            </div>
+                            <div class="form-group">
+                                <textarea
+                                    class="form-control required"
+                                    name="message"
+                                    id="message"
+                                    placeholder="Message"
+                                    required
+                                ></textarea>
+                            </div>
+                            <div class="form-group form-send">
+                                <button
+                                    type="submit"
+                                    value="enviar"
+                                    class="btn btn-default btn-rayen"
+                                    data-text="Let's Go!"
+                                >
+                                    <span>Submit</span>
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="element element-contact-avaliable contact">
+                    <div class="element-wrapper">
+                        <div class="element-contact-available-mask">
+                            <p>
+                                Available for Freelance Work.<br /><small>Complete the form to request a quote.</small>
+                            </p>
+                        </div>
+                        <img src="ref/img/about-picture.jpg" class="responsive-image" alt="" />
+                    </div>
+                </div>
+
+                <div class="element element-content-3 element-contact-infos home contact">
+                    <div class="element-wrapper">
+                        <div class="element-box">
+                            <div class="element-box-bg">
+                                <h2 class="element-box-title"><span>Get in Touch</span></h2>
+                                <div class="contact-infos-ico">
+                                    <img src="ref/img/ico5.svg" alt="" /> <img src="ref/img/ico4.svg" alt="" />
+                                </div>
+                                <h3 class="contact-info-title">Phone:</h3>
+                                <p>+123 456 789 111</p>
+                                <h3 class="contact-info-title">Email:</h3>
+                                <p>john@dotrex.co</p>
+                                <h3 class="contact-info-title">Address:</h3>
+                                <p>451 Lorem Ipsum, <strong>London - Uk</strong></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="element element-contact-map contact">
+                    <div class="element-wrapper">
+                        <div class="map" id="map">
+                            <div class="map-overlay"></div>
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d8352.985568651915!2d-0.12905994797222892!3d51.50665753790812!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47d8a00baf21de75%3A0x52963a5addd52a99!2sLondon%2C+UK!5e0!3m2!1spt-BR!2sbr!4v1443128181953"
+                                style="border:0"
+                                allowfullscreen=""
+                            ></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="form-result modal-wrap" id="contactSuccess">
+            <div class="modal-bg"></div>
+            <div class="modal-content">
+                <h4 class="modal-title"><i class="fa fa-check-circle"></i> Success!</h4>
+                <p>Your message has been sent to us.</p>
+            </div>
+        </div>
+        <div class="form-result modal-wrap" id="contactError">
+            <div class="modal-bg"></div>
+            <div class="modal-content">
+                <h4 class="modal-title"><i class="fa fa-times"></i> Error</h4>
+                <p>There was an error sending your message.</p>
+            </div>
+        </div>
+
+        <footer id="footer">
+            <div id="footer-top">
+                <div class="container">
+                    <p class="footer-quote">
+                        "The power of imagination makes us infinite."<br /><span class="footer-quote-author"
+                            >John Muir</span
+                        >
+                    </p>
+                </div>
+            </div>
+            <div id="footer-bottom">
+                <div class="container">
+                    <p class="footer-bottom-text1">
+                        451 Lorem Ipsum, Austin - Texas<span class="padding">·</span> (845)&nbsp;123-4567
+                        <span class="padding">·</span>
+                        <a
+                            href="mailto:dotrex@dotrex.co"
+                            data-toggle="tooltip"
+                            data-placement="top"
+                            title="Click to mail us!"
+                            >dotrex@dotrex.co</a
+                        >
+                    </p>
+                    <p class="footer-bottom-text2"><span>© 2016, DotFolio. All Rights Reserved.</span></p>
+                </div>
+            </div>
+        </footer>
+
+        <script src="ref/vendor/jquery.min.js"></script>
+        <script src="ref/vendor/bootstrap/js/bootstrap.min.js"></script>
+        <script src="ref/vendor/validate.js"></script>
+        <script src="ref/vendor/holder.js"></script>
+        <script src="ref/vendor/owl.carousel/owl-carousel/owl.carousel.js"></script>
+        <script src="ref/vendor/waypoints.min.js"></script>
+        <script src="ref/vendor/count-to.js"></script>
+        <script src="ref/vendor/fancybox/jquery.fancybox.js"></script>
+        <script src="ref/vendor/jquery.nicescroll.min.js"></script>
+        <script src="ref/vendor/jquery.nicescroll.plus.js"></script>
+        <script src="ref/vendor/jquery.countdown.min.js"></script>
+        <script src="ref/vendor/owl.carousel/owl-carousel/owl.carousel.js"></script>
+        <script src="ref/vendor/imagesloaded.pkgd.min.js"></script>
+        <script src="ref/vendor/masonry.pkgd.min.js"></script>
+        <script src="ref/vendor/jquery.ba-bbq.min.js"></script>
+        <script src="ref/vendor/jquery.isotope2.min.js"></script>
+        <script src="ref/vendor/packery-mode.pkgd.min.js"></script>
+        <script src="ref/vendor/cross-browser.js"></script>
+        <script src="ref/vendor/doubletaptogo.min.js"></script>
+        <script src="ref/vendor/cross-browser.js"></script>
+        <script src="ref/js/main.js"></script>
+    </body>
 </html>
