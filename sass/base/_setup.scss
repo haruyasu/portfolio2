@@ -8,10 +8,10 @@ body {
     background: $white;
     font-family: $ds-font-family;
 }
-::selection {
-    background: $main-color;
-    color: #ffffff;
-}
+// ::selection {
+//     background: $main-color;
+//     color: #ffffff;
+// }
 
 @media (min-width: 1400px) {
     .container {
