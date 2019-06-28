@@ -9,7 +9,7 @@ body {
   font-family: "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ ProN W3", Meiryo, メイリオ, Osaka, "MS PGothic", arial, helvetica, sans-serif; }
 
 ::selection {
-  background: #7b5b4b;
+  background: #284185;
   color: #ffffff; }
 
 @media (min-width: 1400px) {
@@ -63,7 +63,7 @@ body {
   right: 40px;
   bottom: 40px;
   cursor: pointer;
-  background: #7b5b4b;
+  background: #3276b1;
   width: 30px;
   height: 30px;
   line-height: 30px;
@@ -107,7 +107,7 @@ body {
   margin-top: 0 !important; }
 
 .title2 strong {
-  color: #7b5b4b; }
+  color: #284185; }
 
 .title3 {
   font-weight: bold;
@@ -119,7 +119,7 @@ body {
   margin-top: 0 !important; }
 
 .title3 strong {
-  color: #7b5b4b; }
+  color: #284185; }
 
 .title4 {
   font-size: 14px;
@@ -188,7 +188,7 @@ p {
   left: 0;
   width: 100%;
   height: 100%;
-  background: #7b5b4b;
+  background: #284185;
   transform: translate3d(-100%, 0, 0);
   color: #ffffff; }
 
@@ -219,7 +219,7 @@ p {
   left: 0;
   width: 100%;
   height: 100%;
-  border: 2px solid #7b5b4b;
+  border: 2px solid #284185;
   z-index: -1;
   border-radius: inherit;
   opacity: 0;
@@ -229,7 +229,7 @@ p {
 
 .btn-wapasha:hover {
   background-color: transparent;
-  color: #7b5b4b; }
+  color: #284185; }
 
 .btn-wapasha:hover:before {
   transform: scale3d(1, 1, 1);
@@ -430,8 +430,8 @@ textarea.form-control {
 .navbar li a:hover,
 .navbar li a:focus {
   background: transparent;
-  color: #7b5b4b;
-  border-bottom-color: #7b5b4b; }
+  color: #284185;
+  border-bottom-color: #284185; }
 
 @media (min-width: 992px) {
   .navbar li > a {
@@ -441,7 +441,7 @@ textarea.form-control {
   content: "";
   display: block;
   height: 2px;
-  background: #7b5b4b;
+  background: #284185;
   margin-top: 6px;
   opacity: 0;
   transform: translateY(12px);
@@ -493,7 +493,7 @@ textarea.form-control {
     white-space: nowrap;
     transition: all 0.3s ease-in-out;
     color: #ffffff;
-    background: #7b5b4b; }
+    background: #284185; }
   .navbar li > ul > li a:hover {
     background: #111111;
     text-decoration: none; } }
@@ -534,7 +534,7 @@ textarea.form-control {
   padding: 20px !important;
   min-width: 100%;
   color: #ffffff;
-  background: #7b5b4b;
+  background: #284185;
   padding: 0;
   display: block; }
 
@@ -640,7 +640,7 @@ textarea.form-control {
   background-color: transparent !important; }
 
 .social-header li a:hover {
-  color: #7b5b4b; }
+  color: #284185; }
 
 .social-header li a:after {
   display: none; }
@@ -649,94 +649,32 @@ textarea.form-control {
 ! 06. Footer
 ========================================================== */
 #footer {
-  color: #ffffff;
-  background: #333333;
+  color: #f5f5f5;
+  background: #284185;
   text-align: center;
   margin-top: 40px;
-  padding-bottom: 40px; }
-
-#footer .widget {
-  padding: 0;
-  background-color: transparent; }
-
-#footer .widget ul {
-  margin-top: 0; }
-
-#footer .widget_about p {
-  font-size: 12px;
-  line-height: 16px; }
-
-#footer-top {
-  background: #7b5b4b;
-  color: #ffffff;
-  padding: 30px;
-  margin-bottom: 30px; }
+  padding: 40px; }
 
 .footer-bottom-text1 {
-  font-size: 11px; }
+  font-size: 0.875rem; }
 
 @media (min-width: 768px) {
   .footer-bottom-text1 {
     text-transform: uppercase;
     letter-spacing: 2px;
     font-weight: bold;
-    font-size: 13px;
+    font-size: 1rem;
     opacity: 0.9;
     margin-bottom: 10px; } }
 
 .footer-bottom-text1 a {
-  color: #ae8e7e;
+  color: #f5f5f5;
   text-decoration: underline; }
 
 .footer-bottom-text2 {
+  margin: 0;
   opacity: 0.5;
-  font-size: 12px; }
-
-.secondary-footer {
-  background: #111;
-  padding-top: 15px;
-  padding-bottom: 15px;
-  margin-top: 20px; }
-
-.footer-logo {
-  opacity: 0.7;
-  max-width: 150px; }
-
-.footer-quote {
-  font-size: 12px;
-  font-weight: lighter;
-  padding-top: 4px;
-  line-height: 16px;
-  letter-spacing: 4px;
-  margin-bottom: 8px; }
-
-@media (min-width: 992px) {
-  .footer-quote {
-    font-size: 18px;
-    line-height: 28px;
-    margin-bottom: 0; } }
-
-.footer-quote-author {
-  font-size: 12px;
-  letter-spacing: 1px; }
-
-.social-icons-footer {
-  font-size: 24px;
-  text-align: center; }
-
-@media (min-width: 768px) {
-  .social-icons-footer {
-    display: block; } }
-
-.social-icons-footer a {
-  color: #ffffff;
-  transition: all 0.3s ease-in-out;
-  opacity: 1;
-  display: inline-block;
-  margin-right: 35px; }
-
-.social-icons-footer a:hover {
-  opacity: 0.7; }
+  font-size: 0.875rem; }
 
 /* ==========================================================
 ! 07. Page Loader
@@ -938,7 +876,7 @@ textarea.form-control {
   transition: all 0.3s ease-in-out; }
 
 .social-icons a:hover {
-  background: #7b5b4b; }
+  background: #284185; }
 
 /* ==========================================================
 ! 13. Section: Map
@@ -1062,7 +1000,7 @@ textarea.form-control {
 
 .section-title2 {
   font-weight: bold;
-  color: #7b5b4b;
+  color: #284185;
   font-size: 20px;
   line-height: 24px;
   letter-spacing: -1px;
@@ -1070,7 +1008,7 @@ textarea.form-control {
   padding-left: 15px;
   padding-top: 5px;
   padding-bottom: 5px;
-  border-left: 4px solid #7b5b4b; }
+  border-left: 4px solid #284185; }
 
 .section-item-title-2 {
   font-weight: bold;
@@ -1083,7 +1021,7 @@ textarea.form-control {
   margin: 0;
   margin-bottom: 8px;
   letter-spacing: -1px;
-  border-bottom: 1px dotted #7b5b4b;
+  border-bottom: 1px dotted #284185;
   padding-bottom: 5px;
   font-size: 15px; }
 
@@ -1119,7 +1057,7 @@ textarea.form-control {
     font-weight: lighter;
     letter-spacing: 1px; }
   .element-big-content .element-wrapper p strong {
-    color: #7b5b4b; } }
+    color: #284185; } }
 
 @media (min-width: 992px) {
   .element-content-2 {
@@ -1134,7 +1072,7 @@ textarea.form-control {
   padding: 15px; }
 
 .element-content-2 .element-wrapper {
-  background: #7b5b4b;
+  background: #284185;
   color: #ffffff; }
 
 @media (min-width: 992px) {
@@ -1173,7 +1111,7 @@ textarea.form-control {
     font-size: 36px; } }
 
 .element-big-content-title strong {
-  color: #7b5b4b; }
+  color: #284185; }
 
 .element-big-content-ico {
   width: 40px;
@@ -1382,7 +1320,7 @@ textarea.form-control {
   width: 100%;
   height: 100%;
   padding: 20px;
-  background: #7b5b4b;
+  background: #284185;
   overflow: hidden; }
 
 .element-box p {
@@ -1745,7 +1683,7 @@ textarea.form-control {
   transition: all 0.3s ease-in-out; }
 
 .owl-page.active span {
-  background: #7b5b4b !important; }
+  background: #284185 !important; }
 
 .project-single-carousel {
   padding: 3px;
@@ -1786,7 +1724,7 @@ textarea.form-control {
     font-weight: lighter;
     letter-spacing: 1px; }
   .element-project-description .element-wrapper p strong {
-    color: #7b5b4b; } }
+    color: #284185; } }
 
 .element-project-infos {
   width: 100%; }
