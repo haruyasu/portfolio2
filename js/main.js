@@ -261,19 +261,19 @@
 
 
         // Double Tap to Go - Mobile Friendly SubMenus
-        $('.navbar-nav li:has(ul)').doubleTapToGo();
+        // $('.navbar-nav li:has(ul)').doubleTapToGo();
 
         // Maps iframe Overlay
-        var map = $('#map');
-        map.on('click', function () {
-            $('#map iframe').css("pointer-events", "auto");
-            return false;
-        });
+        // var map = $('#map');
+        // map.on('click', function () {
+        //     $('#map iframe').css("pointer-events", "auto");
+        //     return false;
+        // });
 
-        map.on('mouseleave', function () {
-            $('#map iframe').css("pointer-events", "none");
-            return false;
-        });
+        // map.on('mouseleave', function () {
+        //     $('#map iframe').css("pointer-events", "none");
+        //     return false;
+        // });
 
         //Form Validator and Ajax Sender
         $("#contactForm").validate({
