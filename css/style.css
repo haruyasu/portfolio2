@@ -22,23 +22,17 @@ p {
 ========================================================== */
 .element {
   padding: 3px; }
-
-.element .element-wrapper {
-  position: relative; }
+  .element .element-wrapper {
+    position: relative; }
 
 .main-content {
   padding-top: 0px;
   padding-bottom: 40px; }
+  @media (min-width: 992px) {
+    .main-content {
+      min-height: 500px; } }
 
 @media (min-width: 992px) {
-  .main-content {
-    min-height: 500px; } }
-
-@media (min-width: 992px) {
-  .element-content {
-    width: 100%; } }
-
-@media (min-width: 992px) and (min-width: 992px) {
   .element-content {
     width: 50%; } }
 
@@ -46,120 +40,63 @@ p {
   background: #f4f4f4;
   padding: 15px; }
 
-.section-title2 {
-  font-weight: bold;
-  color: #284185;
-  font-size: 20px;
-  line-height: 24px;
-  letter-spacing: -1px;
-  padding-bottom: 10px;
-  padding-left: 15px;
-  padding-top: 5px;
-  padding-bottom: 5px;
-  border-left: 4px solid #284185; }
-
-.section-item-title-2 {
-  font-weight: bold;
-  color: #021533;
-  color: #333;
-  padding-left: 0;
-  margin-left: 0;
-  font-size: 18px;
-  line-height: 22px;
-  margin: 0;
-  margin-bottom: 8px;
-  letter-spacing: -1px;
-  border-bottom: 1px dotted #284185;
-  padding-bottom: 5px;
-  font-size: 15px; }
-
 .element-big-content {
   width: 100%; }
-
-@media (min-width: 992px) {
-  .element-big-content {
-    width: 100%; } }
-
-@media (min-width: 992px) and (min-width: 992px) {
-  .element-big-content {
-    width: 50%; } }
-
-.element-big-content .element-wrapper {
-  background: #f4f4f4;
-  padding: 15px; }
-
-@media (min-width: 992px) {
-  .element-big-content {
-    width: 50%; } }
-
-@media (min-width: 992px) {
+  @media (min-width: 992px) {
+    .element-big-content {
+      width: 50%; } }
   .element-big-content .element-wrapper {
-    min-height: 564px; } }
-
-@media (min-width: 992px) {
-  .element-big-content .element-wrapper {
-    padding: 50px; }
-  .element-big-content .element-wrapper p {
-    font-size: 22px;
-    line-height: 36px;
-    font-weight: lighter;
-    letter-spacing: 1px; }
-  .element-big-content .element-wrapper p strong {
-    color: #284185; } }
+    background: #f4f4f4;
+    padding: 15px; }
+    @media (min-width: 992px) {
+      .element-big-content .element-wrapper {
+        min-height: 564px;
+        padding: 50px; } }
+    @media (min-width: 992px) {
+      .element-big-content .element-wrapper p {
+        font-size: 22px;
+        line-height: 36px;
+        font-weight: lighter;
+        letter-spacing: 1px; } }
+    @media (min-width: 992px) {
+      .element-big-content .element-wrapper p strong {
+        color: #284185; } }
 
 @media (min-width: 992px) {
   .element-content-2 {
-    width: 100%; } }
-
-@media (min-width: 992px) and (min-width: 992px) {
-  .element-content-2 {
     width: 50%; } }
-
-.element-content-2 .element-wrapper {
-  background: #f4f4f4;
-  padding: 15px; }
 
 .element-content-2 .element-wrapper {
   background: #284185;
-  color: #ffffff; }
+  color: #ffffff;
+  padding: 15px; }
 
 @media (min-width: 992px) {
-  .element-content-3 {
-    width: 100%; } }
-
-@media (min-width: 992px) and (min-width: 992px) {
   .element-content-3 {
     width: 50%; } }
 
 .element-content-3 .element-wrapper {
-  background: #f4f4f4;
-  padding: 15px; }
-
-.element-content-3 .element-wrapper {
   background: #111111;
-  color: #ffffff; }
+  color: #ffffff;
+  padding: 15px; }
 
 .element-content-3 .element-box {
   background: #333333 !important; }
-
-.element-content-3 .element-box:before {
-  background: #222222; }
-
-.element-content-3 .element-box:after {
-  background: #111111; }
+  .element-content-3 .element-box:before {
+    background: #222222; }
+  .element-content-3 .element-box:after {
+    background: #111111; }
 
 .element-big-content-title {
   font-weight: bold;
   font-size: 18px; }
-
-@media (min-width: 768px) {
-  .element-big-content-title {
-    letter-spacing: -2px;
-    margin-bottom: 20px;
-    font-size: 36px; } }
-
-.element-big-content-title strong {
-  color: #284185; }
+  @media (min-width: 768px) {
+    .element-big-content-title {
+      letter-spacing: -2px;
+      margin-bottom: 20px;
+      font-size: 36px; } }
+  .element-big-content-title strong {
+    color: #284185; }
 
 .element-big-content-ico {
   width: 40px;
@@ -170,7 +107,9 @@ p {
 ========================================================== */
 @media (min-width: 992px) {
   .element-profile {
-    width: 100%; }
+    width: 100%; } }
+
+@media (min-width: 992px) {
   .element-profile .element-wrapper {
     min-height: 279px; } }
 
@@ -191,13 +130,8 @@ p {
   z-index: 1;
   transform: translateX(0);
   transition: all 0.5s ease-in-out; }
-
-.profile-picture img {
-  max-width: 100%; }
-
-@media (min-width: 992px) {
-  .profile-picture-hover2 {
-    transform: translateX(120px); } }
+  .profile-picture img {
+    max-width: 100%; }
 
 .profile-mask {
   z-index: 3;
@@ -231,65 +165,6 @@ p {
   .profile-mask-content-hide {
     transform: translateX(60px);
     opacity: 0; } }
-
-.profile-intro {
-  display: none;
-  position: absolute;
-  z-index: 9;
-  background: url("../img/bg-card3.png") no-repeat center top #111111;
-  box-shadow: 5px 8px 13px -4px rgba(0, 0, 0, 0.3);
-  background-size: cover;
-  width: 320px;
-  height: 100%;
-  max-width: 100%;
-  top: 0;
-  left: 0;
-  color: #ffffff;
-  transform: translateX(-100%);
-  transition: all 0.5s ease-in-out;
-  padding: 40px;
-  padding-top: 120px; }
-
-@media (min-width: 992px) {
-  .profile-intro {
-    display: block; } }
-
-.profile-intro p {
-  font-size: 12px;
-  line-height: 16px;
-  opacity: 0.9;
-  margin-bottom: 16px; }
-
-.profile-intro .btn-negative {
-  width: 100%; }
-
-.profile-intro-hover {
-  transform: translateX(0); }
-
-.profile-intro-title {
-  font-weight: bold;
-  font-size: 26px;
-  margin-bottom: 8px;
-  letter-spacing: -1px;
-  opacity: 0.9; }
-
-.profile-intro-subtitle {
-  font-size: 12px;
-  border-bottom: 1px dotted #ffffff;
-  margin-top: 0;
-  padding-bottom: 13px;
-  opacity: 0.9;
-  font-style: italic; }
-
-.profile-intro-button {
-  position: absolute;
-  left: 40px;
-  bottom: 40px; }
-
-.profile-info {
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  font-size: 11px !important; }
 
 /* ==========================================================
 ! 18. Section: About Elements
