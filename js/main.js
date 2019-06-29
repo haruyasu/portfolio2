@@ -225,25 +225,25 @@
 
 
         //Collapse menu - desktops 
-        var dMenuBtn = 1;
-        $('#desktop-menu-button').on('click', function () {
-            if (dMenuBtn == 1) {
-                $('.desktop-menu-button-title').addClass('desktop-menu-button-title-disable');
-                setTimeout(function () {
-                    $('#desktop-menu-button').addClass('desktop-menu-button-active');
-                    $('.nav').removeClass('navbar-hide');
-                }, 300);
-                dMenuBtn = 2;
-            }
-            else if (dMenuBtn == 2) {
-                $(this).removeClass('desktop-menu-button-active');
-                $('.nav').addClass('navbar-hide');
-                setTimeout(function () {
-                    $('.desktop-menu-button-title').removeClass('desktop-menu-button-title-disable');
-                }, 300);
-                dMenuBtn = 1;
-            }
-        });
+        // var dMenuBtn = 1;
+        // $('#desktop-menu-button').on('click', function () {
+        //     if (dMenuBtn == 1) {
+        //         $('.desktop-menu-button-title').addClass('desktop-menu-button-title-disable');
+        //         setTimeout(function () {
+        //             $('#desktop-menu-button').addClass('desktop-menu-button-active');
+        //             $('.nav').removeClass('navbar-hide');
+        //         }, 300);
+        //         dMenuBtn = 2;
+        //     }
+        //     else if (dMenuBtn == 2) {
+        //         $(this).removeClass('desktop-menu-button-active');
+        //         $('.nav').addClass('navbar-hide');
+        //         setTimeout(function () {
+        //             $('.desktop-menu-button-title').removeClass('desktop-menu-button-title-disable');
+        //         }, 300);
+        //         dMenuBtn = 1;
+        //     }
+        // });
 
         // Fancybox
         $(".fancybox-iframe-btn").fancybox({

@@ -1,0 +1,211 @@
+#header {
+    padding-top: 20px;
+
+    .container {
+        position: relative;
+        z-index: 999;
+    }
+
+    .menu-wrapper {
+        @media (min-width: 992px) {
+            padding-top: 55px;
+            padding-bottom: 35px;
+        }
+        
+        &:after {
+            content: "";
+            display: block;
+            clear: both;
+        }
+    }
+
+    .navbar {
+        margin-bottom: 0;
+    }
+
+    @media (min-width: 992px) {
+        padding-top: 0;
+    }
+}
+
+
+.navbar-collapse {
+    padding-top: 20px;
+
+    @media (min-width: 992px) {
+        padding: 25px 0 0 0;
+    }
+}
+
+.navbar {
+    padding-top: 0px;
+    padding-bottom: 15px;
+
+    .nav {
+        background: $white;
+        transition: all 0.3s ease-in-out;
+        opacity: 1;
+        transform: translateX(0);
+
+        @media (min-width: 768px) {
+            background-color: transparent;
+        }
+    }
+
+    li {
+        position: relative;
+
+        a {
+            white-space: nowrap;
+            color: $black;
+            text-transform: uppercase;
+            transition: all 0.3s ease-in-out;
+            font-size: $ds-font-size-medium;
+            letter-spacing: 4px;
+            font-weight: normal;
+
+            @media (min-width: 992px) {
+                margin-right: 10px;
+            }
+
+            &:hover,
+            &:focus {
+                background: transparent;
+                color: $point-color;
+                border-bottom-color: $point-color;
+            }
+
+            &:after {
+                content: "";
+                display: block;
+                height: 2px;
+                background: $point-color;
+                margin-top: 6px;
+                opacity: 0;
+                transform: translateY(12px);
+                transition: all 0.3s ease-in-out;
+            }
+
+            &:hover:after {
+                transform: translateY(0px);
+                opacity: 1;
+            }
+        }
+
+        ul {
+            list-style: none;
+            position: relative;
+
+            @media (min-width: 768px) {
+                position: absolute;
+                top: 100%;
+                left: 0;
+                padding: 0;
+                display: block;
+                list-style: none;
+                visibility: hidden;
+                opacity: 0;
+                transition: all 0.3s ease-in-out;
+                z-index: 999999999;
+            }
+
+            li {
+                padding: 0;
+
+                a {
+                    padding: 5px;
+                    padding-left: 8px;
+                    display: block;
+
+                    @media (min-width: 768px) {
+                        padding: 10px;
+                        white-space: nowrap;
+                        transition: all 0.3s ease-in-out;
+                        color: #ffffff;
+                        background: $point-color;
+                    }
+
+                    &:hover {
+                        background: $black;
+                        color: #ffffff;
+
+                        @media (min-width: 768px) {
+                            text-decoration: none;
+                        }
+                    }
+
+                    &:after {
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.navbar-toggle {
+    color: $black;
+    border-color: $black;
+}
+
+.navbar-brand {
+    display: block;
+    height: auto;
+    width: 140px;
+
+    @media (min-width: 768px) {
+        width: 231px;
+    }
+
+    @media (min-width: 992px) {
+        padding-left: 40px;
+        padding-right: 0;
+    }
+
+    img {
+        max-width: 100%;
+        opacity: 0.8;
+    }
+}
+
+.social-header {
+    display: none;
+    float: right;
+    list-style: none;
+    padding-top: 7px;
+    padding-bottom: 5px;
+    border-left: 1px solid #bbb;
+    margin-top: 0px;
+    padding-left: 35px;
+
+    @media (min-width: 992px) {
+        display: block;
+    }
+
+    li {
+        display: block;
+        float: left;
+        margin-right: 20px;
+
+        a {
+            display: block;
+            text-align: center;
+            width: 35px;
+            height: 35px;
+            padding-left: 5px;
+            line-height: 35px;
+            margin-right: 0;
+            font-size: $ds-font-size-medium;
+            color: $black;
+            background-color: transparent !important;
+
+            &:hover {
+                color: $main-color;
+            }
+
+            &:after {
+                display: none;
+            }
+        }
+    }
+}
