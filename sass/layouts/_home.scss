@@ -1,0 +1,28 @@
+.owl-carousel * {
+    will-change: transform;
+}
+
+.owl-controls-wrapper2:hover .owl-controls {
+    opacity: 1;
+}
+.owl-controls-wrapper2 .owl-controls {
+    opacity: 0.4;
+    transition: all 0.3s ease-in-out;
+    width: 100%;
+    position: absolute;
+    top: auto;
+    bottom: 0;
+    left: 0;
+    padding: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+    background: rgba(0, 0, 0, 0.4);
+    color: #ffffff !important;
+}
+.owl-controls-wrapper2 .owl-controls a {
+    color: #ffffff !important;
+}
+.owl-controls-wrapper2 .owl-controls .owl-page.active {
+    background: transparent;
+}
+

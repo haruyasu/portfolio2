@@ -1,0 +1,31 @@
+#footer {
+    color: $white;
+    background: $main-color;
+    text-align: center;
+    margin-top: 40px;
+    padding: 40px;
+}
+
+.footer-bottom-text1 {
+    font-size: $ds-font-size-small;
+
+    @media (min-width: 768px) {
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        font-weight: bold;
+        font-size: $ds-font-size-medium;
+        opacity: 0.9;
+        margin-bottom: 10px;
+    }
+
+    a {
+        color: $white;
+        text-decoration: underline;
+    }
+}
+
+.footer-bottom-text2 {
+    margin: 0;
+    opacity: 0.5;
+    font-size: $ds-font-size-small;
+}

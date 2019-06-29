@@ -10,3 +10,51 @@
 textarea.form-control {
     min-height: 100px;
 }
+
+
+.modal-wrap {
+    visibility: hidden;
+}
+.modal-show {
+    visibility: visible;
+}
+.modal-bg {
+    background: #333;
+    opacity: 0.9;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 8888;
+}
+.modal-content {
+    background: $black;
+    font-size: 18px;
+    position: fixed;
+    top: 40%;
+    left: 50%;
+    margin-left: -125px;
+    width: 250px;
+    z-index: 9999;
+    padding: 10px 20px;
+
+    .modal-title {
+        color: #ffffff;
+        font-size: 22px;
+        border-bottom: 1px solid #ccc;
+        margin-bottom: 5px;
+        font-weight: bold;
+    }
+
+    p {
+        font-size: 14px;
+        margin-bottom: 0;
+        color: #ffffff;
+    }
+}
+
+#contactError .modal-title {
+    color: #fff;
+}
+

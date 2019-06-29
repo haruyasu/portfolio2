@@ -14,7 +14,6 @@
         //Page Loader 
         setTimeout(function () {
             $('#loader-name').addClass('loader-up');
-            $('#loader-job').addClass('loader-up');
             $('#loader-animation').addClass('loader-up');
             return false;
         }, 500);

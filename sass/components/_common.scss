@@ -28,3 +28,124 @@
         opacity: 0.9;
     }
 }
+
+#page-loader {
+    display: none;
+    visibility: hidden;
+    width: 100%;
+    height: 100%;
+    color: #ffffff;
+    opacity: 1;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    transition: all 0.6s ease-in-out;
+
+    @media (min-width: 768px) {
+        display: block;
+        visibility: visible;
+    }
+
+    &:before {
+        content: "";
+        display: block;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 50%;
+        height: 100%;
+        background: #333333;
+        z-index: 1;
+        transition: all 0.6s ease-in-out;
+    }
+
+    &:after {
+        content: "";
+        display: block;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        right: 0;
+        width: 50%;
+        height: 100%;
+        background: #333333;
+        transition: all 0.6s ease-in-out;
+    }
+}
+
+
+.loader-out {
+    opacity: 0;
+
+    &:before {
+        transform: translateX(-600px);
+        opacity: 0;
+    }
+    &:after {
+        transform: translateX(600px);
+        opacity: 0;
+    }
+}
+
+.loading-wrapper {
+    width: 250px;
+    position: fixed;
+    top: 50%;
+    margin-top: -130px;
+    left: 50%;
+    margin-left: -125px;
+    opacity: 1;
+    transition: all 0.6s ease-in-out;
+    z-index: 9;
+    transform: translateY(0px);
+
+    &-hide {
+        opacity: 0;
+        transition: all 0.6s ease-in-out;
+        transform: translateY(-20px);
+    }
+}
+
+.loader-name {
+    color: #ffffff;
+    opacity: 0.8;
+    text-align: center;
+    letter-spacing: 0px;
+    padding-left: 2px;
+    padding-right: 2px;
+    font-weight: bold;
+    margin-top: 45px;
+    transition: all 0.4s ease-in-out;
+    margin-bottom: 35px;
+
+    img {
+        max-width: 230px;
+    }
+}
+
+.loader-up {
+    transform: translateY(-80px);
+    opacity: 0 !important;
+}
+
+.loader-animation {
+    text-align: center;
+}
+
+.svg-loader {
+    margin: 0px auto;
+    margin-bottom: -30px;
+    display: block;
+    animation: svg-rotate 4000ms linear infinite;
+
+    circle {
+        fill: transparent;
+        stroke: #ffffff;
+        stroke-width: 4;
+        stroke-linecap: round;
+        stroke-dasharray: 0, 301.59289;
+        animation: stroke-dash 2000ms linear infinite, stroke-width 2000ms linear infinite,
+            stroke-color 8000ms steps(4) infinite;
+    }
+}
