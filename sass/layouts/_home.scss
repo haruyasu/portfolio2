@@ -87,18 +87,36 @@
     }
 }
 
+.element-big-content-about {
+    width: 100%;
+
+    .element-wrapper {
+        padding: 15px;
+
+        @media (min-width: 992px) {
+            padding: 50px;
+        }
+
+        p {
+            font-size: 16px;
+
+            @media (min-width: 992px) {
+                font-size: 18px;
+                line-height: 36px;
+                font-weight: lighter;
+                letter-spacing: 1px;
+            }
+        }
+    }
+}
+
 .element-big-content-title {
     font-weight: bold;
-    font-size: 18px;
+    font-size: 22px;
 
     @media (min-width: 768px) {
-        letter-spacing: -2px;
         margin-bottom: 20px;
         font-size: 36px;
-    }
-
-    strong {
-        color: $main-color;
     }
 }
 
@@ -442,7 +460,7 @@
             padding-left: 15px;
             padding-right: 15px;
             border: 1px solid $black;
-            transition: all 0.4s ease-in-out;
+            transition: all 0.3s ease-in-out;
             letter-spacing: 2px;
 
             @media (min-width: 992px) {
@@ -454,8 +472,9 @@
             &:hover,
             &:focus {
                 text-decoration: none;
-                background: $black;
+                background: $point-color;
                 color: #ffffff;
+                border: 1px solid $point-color;
             }
         }
     }

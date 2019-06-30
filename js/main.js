@@ -17,10 +17,12 @@
             $('#loader-animation').addClass('loader-up');
             return false;
         }, 500);
+
         setTimeout(function () {
             $('#page-loader').addClass('loader-out');
             return false;
         }, 1100);
+
         $('#page-loader').delay(1600).fadeOut(10);
 
         //Owl Carousel
@@ -45,13 +47,14 @@
                 $('#back-to-top').addClass('back-to-top-hide');
             }
         },
-            {
-                offset: '-400px'
-            });
+        {
+            offset: '-400px'
+        });
+
         function backToTop() {
             $('html, body').animate({
                 scrollTop: 0
-            }, 800);
+            }, 200);
         }
 
         $('.back-to-top').on('click', function () {
@@ -69,7 +72,7 @@
             $container.isotope({
                 itemSelector: '.element',
                 resizable: false,
-                transitionDuration: '0.5s',
+                transitionDuration: '0.4s',
                 layoutMode: 'packery'
             });
         });
@@ -120,17 +123,17 @@
         }).trigger('hashchange');
 
         //Masonry Layout on Blog
-        var $containerBlog = $('#blog-posts-masonry')
+        // var $containerBlog = $('#blog-posts-masonry')
 
-        $containerBlog.imagesLoaded(function () {
-            $containerBlog.isotope({
-                itemSelector: '.blog-item',
-                resizable: false,
-                //filter: '*',
-                transitionDuration: '0.8s',
-                layoutMode: 'packery'
-            });
-        });
+        // $containerBlog.imagesLoaded(function () {
+        //     $containerBlog.isotope({
+        //         itemSelector: '.blog-item',
+        //         resizable: false,
+        //         //filter: '*',
+        //         transitionDuration: '0.8s',
+        //         layoutMode: 'packery'
+        //     });
+        // });
 
         //Viewport
         var windowHeight = $(window).height();
@@ -199,15 +202,18 @@
                 thisBox.addClass('element-box-hover2');
                 //clearInterval(intervalBox1);
             }, 400);
+
             var intervalBox2 = setTimeout(function () {
                 thisBox.find('.element-box-ico').addClass('element-box-ico-hover');
                 //clearInterval(intervalBox2);
             }, 800);
+
             return false;
         });
 
         $('.element-box-interative').on('mouseleave', function () {
             thisBox = $(this);
+
             $('.element-box-ico').removeClass('element-box-ico-hover');
             var intervalBox3 = setTimeout(function () {
                 $('.element-box-interative').removeClass('element-box-hover2');
@@ -219,6 +225,7 @@
                 $('.element-box-ico').removeClass('element-box-ico-hover');
                 //clearInterval(intervalBox4);
             }, 800);
+
             return false;
         });
 
