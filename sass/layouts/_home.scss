@@ -404,115 +404,97 @@
 ========================================================== */
 .element-portfolio-filter {
     width: 100%;
-}
-.element-portfolio-filter .element-wrapper {
-    background-color: transparent;
-}
-@media (min-width: 992px) {
-    .element-portfolio-filter .element-wrapper {
-        padding-bottom: 60px;
+
+    .element-wrapper {
+        background-color: transparent;
+
+        @media (min-width: 992px) {
+            padding-bottom: 60px;
+        }
     }
 }
+
 .portfolio-filter-header {
     list-style: none;
     padding-left: 0;
     margin: 0;
-}
-@media (min-width: 992px) {
-    .portfolio-filter-header {
-        text-align: center;
+    text-align: center;
+
+    li {
+        margin: 0;
+        padding-left: 0;
+        display: inline-block;
+        height: 40px;
+
+        @media (min-width: 768px) {
+            height: auto;
+        }
+
+        a {
+            color: $black;
+            padding: 10px;
+            padding-left: 15px;
+            padding-right: 15px;
+            border: 1px solid $black;
+            transition: all 0.4s ease-in-out;
+            letter-spacing: 2px;
+
+            @media (min-width: 992px) {
+                letter-spacing: 6px;
+                font-size: 12px;
+                text-transform: uppercase;
+            }
+
+            &:hover,
+            &:focus {
+                text-decoration: none;
+                background: $black;
+                color: #ffffff;
+            }
+        }
     }
 }
-.portfolio-filter-header li {
-    margin: 0;
-    padding-left: 0;
-    display: inline-block;
-    height: 40px;
-}
-@media (min-width: 768px) {
-    .portfolio-filter-header li {
-        height: auto;
-    }
-}
-.portfolio-filter-header li a {
-    color: $black;
-    padding: 10px;
-    padding-left: 15px;
-    padding-right: 15px;
-    border: 1px solid $black;
-    transition: all 0.4s ease-in-out;
-    letter-spacing: 2px;
-}
-@media (min-width: 992px) {
-    .portfolio-filter-header li a {
-        letter-spacing: 6px;
-        font-size: 12px;
-        text-transform: uppercase;
-    }
-}
-.portfolio-filter-header li a:hover,
-.portfolio-filter-header li a:focus {
-    text-decoration: none;
-    background: $black;
-    color: #ffffff;
-}
+
+// square
 .element-portfolio-item {
     width: 100%;
+
+    @media (min-width: 768px) {
+        width: 50%;
+    }
+
+    @media (min-width: 992px) {
+        width: 25%;
+    }
+
+    .element-wrapper {
+        min-height: 279px;
+    }
+
 }
-.element-portfolio-item .element-wrapper {
-    min-height: 279px;
+
+// big square
+.element-portfolio-item1 {
+    width: 100%;
+
+    @media (min-width: 992px) {
+        width: 50%;
+    }
+
+    .element-wrapper {
+        min-height: 564px;
+    }
 }
-@media (min-width: 768px) {
-    .element-portfolio-item {
+
+// width long
+.element-portfolio-item2 {
+    width: 100%;
+
+    @media (min-width: 992px) {
         width: 50%;
     }
 }
-@media (min-width: 992px) {
-    .element-portfolio-item {
-        width: 25%;
-    }
-}
-.element-portfolio-item .element-wrapper {
-    min-height: 279px;
-}
-// .element-portfolio-item1 {
-//     width: 100%;
-// }
-// @media (min-width: 992px) {
-//     .element-portfolio-item1 {
-//         width: 50%;
-//     }
-// }
-// .element-portfolio-item1 .element-wrapper {
-//     min-height: 564px;
-// }
-// .element-portfolio-item2 {
-//     width: 100%;
-// }
-// @media (min-width: 992px) {
-//     .element-portfolio-item2 {
-//         width: 50%;
-//     }
-// }
-// .element-portfolio-item6 {
-//     width: 100%;
-// }
-// @media (min-width: 992px) {
-//     .element-portfolio-item6 {
-//         width: 50%;
-//     }
-// }
-// .element-portfolio-item6 .element-wrapper {
-//     min-height: 564px;
-// }
-// .element-portfolio-item9 {
-//     width: 100%;
-// }
-// @media (min-width: 992px) {
-//     .element-portfolio-item9 {
-//         width: 50%;
-//     }
-// }
+
 .portfolio-item {
     padding: 0;
     width: 100%;
@@ -522,20 +504,21 @@
     transform: translateY(0px);
     margin-bottom: 10px;
     height: 100%;
-}
-@media (min-width: 768px) {
-    .portfolio-item {
+
+    @media (min-width: 768px) {
         margin-bottom: 0;
     }
+
+    a {
+        display: block;
+        transition: all 0.6s ease-in-out;
+    }
 }
-.portfolio-item a {
-    display: block;
-    cursor: url("../img/projects.cur"), projetos !important;
-    transition: all 0.6s ease-in-out;
-}
+
 .portfolio-hover-animation {
     transition: all 0.4s ease-in-out;
 }
+
 .portfolio-thumbnail {
     display: block;
     background-size: cover;
@@ -547,24 +530,30 @@
     width: 100%;
     text-align: center;
     color: #ffffff;
+
+    &:hover {
+        color: #ffffff;
+
+        .portfolio-description-wrapper {
+            opacity: 1;
+        }
+
+        .portfolio-title {
+            transform: translateY(0px);
+        }
+
+        .see-more {
+            opacity: 1;
+            transform: translateY(0px);
+        }
+
+        .portfolio-item-ico {
+            opacity: 1;
+            transform: translateX(0px);
+        }
+    }
 }
-.portfolio-thumbnail:hover {
-    color: #ffffff;
-}
-.portfolio-thumbnail:hover .portfolio-description-wrapper {
-    opacity: 1;
-}
-.portfolio-thumbnail:hover .portfolio-title {
-    transform: translateY(0px);
-}
-.portfolio-thumbnail:hover .see-more {
-    opacity: 1;
-    transform: translateY(0px);
-}
-.portfolio-thumbnail:hover .portfolio-item-ico {
-    opacity: 1;
-    transform: translateX(0px);
-}
+
 .portfolio-description-wrapper {
     display: block;
     width: 100%;
@@ -574,6 +563,7 @@
     color: #ffffff;
     position: relative;
 }
+
 .portfolio-description {
     position: absolute;
     width: 100%;
@@ -581,50 +571,52 @@
     top: 0;
     left: 0;
     overflow: hidden;
+
+    .portfolio-title {
+        display: block;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        background: $point-color;
+        text-align: center;
+        width: 100%;
+        padding: 25px 15px;
+        margin-bottom: 0;
+        text-align: left;
+        font-size: 16px;
+        text-transform: uppercase;
+        font-weight: lighter;
+        transform: translateY(60px);
+        transition: all 0.4s ease-in-out;
+    }
+
+    .portfolio-item-ico {
+        float: right;
+        display: block;
+        transform: translateX(-20px);
+        opacity: 0;
+        transition: all 0.4s ease-in-out;
+        transition-delay: 0.4s;
+    }
+
+    .see-more {
+        display: inline-block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: $point-color;
+        color: #ffffff;
+        padding: 8px;
+        padding-top: 4px;
+        padding-bottom: 4px;
+        font-size: 10px;
+        font-weight: bold;
+        opacity: 1;
+        transition: all 0.4s ease-in-out;
+    }
 }
-.portfolio-description .portfolio-title {
-    display: block;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    background: rgba(127, 94, 77, 0.9);
-    text-align: center;
-    width: 100%;
-    padding-top: 25px;
-    padding-bottom: 25px;
-    margin-bottom: 0;
-    text-align: left;
-    padding-left: 15px;
-    padding-right: 15px;
-    font-size: 16px;
-    text-transform: uppercase;
-    font-weight: lighter;
-    transform: translateY(60px);
-    transition: all 0.4s ease-in-out;
-}
-.portfolio-description .portfolio-item-ico {
-    float: right;
-    display: block;
-    transform: translateX(-20px);
-    opacity: 0;
-    transition: all 0.4s ease-in-out;
-    transition-delay: 0.4s;
-}
-.portfolio-description .see-more {
-    display: inline-block;
-    position: absolute;
-    top: 0;
-    left: 0;
-    background: #fefefe;
-    color: #333;
-    padding: 8px;
-    padding-top: 4px;
-    padding-bottom: 4px;
-    font-size: 10px;
-    font-weight: bold;
-    opacity: 1;
-    transition: all 0.4s ease-in-out;
-}
+
+
 /*============================================================================
   >> 20. Portfolio - Single
   ============================================================================
@@ -852,12 +844,15 @@
     margin-top: 0;
     margin-bottom: 1px;
 }
+
 .contact-infos-ico {
-    margin-bottom: 16px;
+    margin-bottom: 30px;
+
+    img {
+        width: 32px;
+    }
 }
-.contact-infos-ico img {
-    width: 32px;
-}
+
 .element-contact-hire {
     width: 100%;
 }
