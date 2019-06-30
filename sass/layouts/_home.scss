@@ -29,6 +29,30 @@
     }
 }
 
+.element-content-2 {
+    @media (min-width: 992px) {
+        width: 50%;
+    }
+
+    .element-wrapper {
+        background: $black;
+        color: #ffffff;
+        padding: 15px;
+    }
+
+    .element-box {
+        background: #333333 !important;
+
+        &:before {
+            background: #222222;
+        }
+
+        &:after {
+            background: $black;
+        }
+    }
+}
+
 .element-big-content {
     width: 100%;
 
@@ -59,42 +83,6 @@
                     color: $main-color;
                 }
             }
-        }
-    }
-}
-
-.element-content-2 {
-    @media (min-width: 992px) {
-        width: 50%;
-    }
-
-    .element-wrapper {
-        background: $main-color;
-        color: #ffffff;
-        padding: 15px;
-    }
-}
-
-.element-content-3 {
-    @media (min-width: 992px) {
-        width: 50%;
-    }
-
-    .element-wrapper {
-        background: $black;
-        color: #ffffff;
-        padding: 15px;
-    }
-
-    .element-box {
-        background: #333333 !important;
-
-        &:before {
-            background: #222222;
-        }
-
-        &:after {
-            background: $black;
         }
     }
 }
@@ -245,6 +233,8 @@
 .element-services .element-wrapper {
     padding: 10px;
 }
+
+
 .element-box {
     display: block;
     position: absolute;
@@ -255,47 +245,54 @@
     padding: 20px;
     background: $main-color;
     overflow: hidden;
+
+    p {
+        margin-bottom: $ds-font-size-small;
+        opacity: 0.9;
+        font-weight: lighter;
+    }
+
+    &:before {
+        content: "";
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: $side-color;
+        z-index: 1;
+        transition: all 0.4s ease-in-out;
+        transform: translateX(-100%);
+    }
+
+    &:after {
+        content: "";
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: $main-color;
+        z-index: 2;
+        transition: all 0.4s ease-in-out;
+        transform: translateY(100%);
+    }
+
+    &:hover {
+        text-decoration: none;
+    }
 }
-.element-box p {
-    margin-bottom: 8px;
-    opacity: 0.9;
-    font-weight: lighter;
-}
-.element-box:before {
-    content: "";
-    display: block;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: #6a4a3a;
-    z-index: 1;
-    transition: all 0.4s ease-in-out;
-    transform: translateX(-100%);
-}
-.element-box:after {
-    content: "";
-    display: block;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: #593929;
-    z-index: 2;
-    transition: all 0.4s ease-in-out;
-    transform: translateY(100%);
-}
-.element-box:hover {
-    text-decoration: none;
-}
+
 .element-box-hover1:before {
     transform: translateX(0);
 }
+
 .element-box-hover2:after {
     transform: translateY(0);
 }
+
 .element-box-bg {
     display: block;
     position: relative;
@@ -305,6 +302,7 @@
     left: 0;
     z-index: 999;
 }
+
 .element-box-title {
     color: #ffffff;
     margin-top: 0;
@@ -317,32 +315,37 @@
     font-weight: lighter;
     z-index: 2;
 }
+
 .element-box-ico {
     color: #ffffff;
     position: absolute;
     right: 0px;
     bottom: 0px;
+
+    .see-more {
+        display: inline-block;
+        text-transform: uppercase;
+        font-style: italic;
+        font-size: 12px;
+        position: relative;
+        top: -2px;
+        margin-right: 6px;
+        font-weight: bold;
+        opacity: 0;
+        transform: translateX(10px);
+        visibility: hidden;
+        transition: all 0.4s ease-in-out;
+    }
 }
-.element-box-ico .see-more {
-    display: inline-block;
-    text-transform: uppercase;
-    font-style: italic;
-    font-size: 12px;
-    position: relative;
-    top: -2px;
-    margin-right: 6px;
-    font-weight: bold;
-    opacity: 0;
-    transform: translateX(10px);
-    visibility: hidden;
-    transition: all 0.4s ease-in-out;
-}
+
 .element-box-ico2 {
     margin-bottom: 12px;
+
+    img {
+        width: 24px;
+    }
 }
-.element-box-ico2 img {
-    width: 24px;
-}
+
 .element-box-title2 {
     font-size: 12px;
     font-weight: normal;
@@ -352,11 +355,14 @@
     text-transform: uppercase;
     letter-spacing: 1px;
 }
+
 .element-box-ico-hover .see-more {
     opacity: 1 !important;
     transform: translateX(0px) !important;
     visibility: visible !important;
 }
+
+
 .service-item {
     text-align: left;
     padding-right: 40px;
