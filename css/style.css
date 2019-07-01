@@ -544,12 +544,12 @@ p {
     padding: 15px; }
     @media (min-width: 992px) {
       .element-big-content-about .element-wrapper {
-        padding: 50px; } }
+        padding: 0 50px; } }
     .element-big-content-about .element-wrapper p {
-      font-size: 16px; }
+      font-size: 16px;
+      margin: 0; }
       @media (min-width: 992px) {
         .element-big-content-about .element-wrapper p {
-          font-size: 18px;
           line-height: 36px;
           font-weight: lighter;
           letter-spacing: 1px; } }
@@ -557,10 +557,6 @@ p {
 .element-big-content-title {
   font-weight: bold;
   font-size: 22px; }
-  @media (min-width: 768px) {
-    .element-big-content-title {
-      margin-bottom: 20px;
-      font-size: 36px; } }
 
 .element-big-content-ico {
   width: 40px;
@@ -1293,6 +1289,70 @@ p {
 
 .contact-form-ico img {
   width: 22px; }
+
+.about__content__box {
+  margin: 0 0 20px 0; }
+
+.exp-wrap {
+  width: 100%;
+  border-bottom: 1px solid #979797;
+  float: left;
+  margin: 0 0 15px 0; }
+  .exp-wrap .desc {
+    float: left;
+    width: calc(100% - 150px); }
+    .exp-wrap .desc h4 span {
+      color: #979797;
+      font-weight: 400; }
+    .exp-wrap .desc .location {
+      margin-bottom: 0; }
+  .exp-wrap .year {
+    float: left;
+    margin-top: 16px;
+    width: 150px;
+    text-align: right; }
+
+.progress-wrap {
+  margin-bottom: 30px; }
+  .progress-wrap h4 {
+    font-size: 18px;
+    margin-bottom: 10px; }
+
+.progress {
+  height: 4px;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  background: #979797;
+  overflow: visible;
+  border-radius: 0; }
+
+.progress-bar {
+  background: #293241;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  line-height: 1.2;
+  color: #979797;
+  font-weight: 400;
+  text-align: right;
+  position: relative;
+  overflow: visible;
+  border-radius: 30px; }
+  .progress-bar span {
+    position: absolute;
+    top: -34px;
+    right: 0;
+    color: #979797; }
+  .progress-bar:after {
+    content: "";
+    position: absolute;
+    top: -3px;
+    right: 0;
+    width: 10px;
+    height: 10px;
+    background: #293241;
+    border-radius: 50%; }
+  .progress-bar .color-1 {
+    background: #293241; }
 
 .form-control {
   width: 100% !important;

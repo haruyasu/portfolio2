@@ -94,14 +94,14 @@
         padding: 15px;
 
         @media (min-width: 992px) {
-            padding: 50px;
+            padding: 0 50px;
         }
 
         p {
             font-size: 16px;
+            margin: 0;
 
             @media (min-width: 992px) {
-                font-size: 18px;
                 line-height: 36px;
                 font-weight: lighter;
                 letter-spacing: 1px;
@@ -113,11 +113,6 @@
 .element-big-content-title {
     font-weight: bold;
     font-size: 22px;
-
-    @media (min-width: 768px) {
-        margin-bottom: 20px;
-        font-size: 36px;
-    }
 }
 
 .element-big-content-ico {
