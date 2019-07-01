@@ -6,14 +6,14 @@
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <title>Haruyasu Kaitori</title>
 
-        <link href="ref/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+        <!-- <link href="ref/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" /> -->
 
-        <!-- <link
+        <link
             rel="stylesheet"
             href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
             integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
             crossorigin="anonymous"
-        /> -->
+        />
 
         <!-- <link href="https://fonts.googleapis.com/css?family=Lato:400,300,700" rel="stylesheet" type="text/css" /> -->
         <link href="ref/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" />
@@ -25,7 +25,7 @@
         <link href="css/style.css" rel="stylesheet" />
     </head>
     <body>
-        <div class="loader-container" id="page-loader">
+        <!-- <div class="loader-container" id="page-loader">
             <div class="loading-wrapper loading-wrapper-hide">
                 <div class="loader-animation" id="loader-animation">
                     <svg class="svg-loader" width="100" height="100">
@@ -46,9 +46,9 @@
             title="Back to Top"
         >
             <i class="fa fa-angle-up"></i>
-        </div>
+        </div> -->
 
-        <header id="header">
+        <!-- <header id="header">
             <nav class="navbar">
                 <div class="container">
                     <div class="menu-wrapper">
@@ -142,7 +142,38 @@
                     </div>
                 </div>
             </nav>
-        </header>
+        </header> -->
+
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="#">Navbar</a>
+            <button
+                class="navbar-toggler"
+                type="button"
+                data-toggle="collapse"
+                data-target="#navbarNav"
+                aria-controls="navbarNav"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+            >
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Features</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Pricing</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
 
         <section class="main-content container">
             <div class="isotope-filter" id="isotope-filter">
@@ -167,12 +198,12 @@
                         <div class="element-big-content-ico"><img src="ref/img/ico6b.svg" alt="" /></div>
                         <h2 class="element-big-content-title">Hello! I'm Haruyasu Kaitori.</h2>
                         <p>
-                            I started working at FUJISOFT as a Software Engineer from 2008 in Nagoya, Japan. With
-                            experiences in development of car navigation system and car platform and real-time operating
-                            systems for automotive embedded systems, I have gained programming knowledge in Python,
-                            C/C++ and Ruby. I managed and provided technical leadership to a team of 5 Software
-                            Engineers. Also I am a full-stack web developer. I have advanced knowledge in Django, HTML,
-                            CSS, JavaScript.
+                            大学では数学とプログラミングを専攻。 大手SIerで8年間Software
+                            Engineerとして車載開発に携わり、複数のプログラミング言語を自在に操る。
+                            英語は得意ではなかったが、国際カンファレンスに出席することがきっかけで英語を学び、英語の楽しさに目覚める。
+                            30歳の新たな挑戦として海外に行くことを決意。
+                            映画好きだったこともあり、カナダのバンクーバーでVFXを学び、モントリオールでハリウッド映画の製作に携わる。
+                            そして、東京を拠点にして、独立。 スポーツ大好きで日々のトレーニングはかかせない。
                         </p>
                     </div>
                 </div>
@@ -629,7 +660,23 @@
             </div>
         </footer>
 
-        <script src="ref/vendor/jquery.min.js"></script>
+        <script
+            src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+            crossorigin="anonymous"
+        ></script>
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+            integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+            crossorigin="anonymous"
+        ></script>
+        <script
+            src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+            integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+            crossorigin="anonymous"
+        ></script>
+
+        <!-- <script src="ref/vendor/jquery.min.js"></script>
         <script src="ref/vendor/bootstrap/js/bootstrap.min.js"></script>
         <script src="ref/vendor/validate.js"></script>
         <script src="ref/vendor/holder.js"></script>
@@ -648,7 +695,7 @@
         <script src="ref/vendor/packery-mode.pkgd.min.js"></script>
         <script src="ref/vendor/cross-browser.js"></script>
         <script src="ref/vendor/doubletaptogo.min.js"></script>
-        <script src="ref/vendor/cross-browser.js"></script>
+        <script src="ref/vendor/cross-browser.js"></script> -->
 
         <script src="js/main.js"></script>
     </body>
