@@ -16,6 +16,10 @@
     @media (min-width: 992px) {
         min-height: 500px;
     }
+
+    @media (max-width: 768px) {
+        margin: 0;
+    }
 }
 
 .element-content {
@@ -118,6 +122,23 @@
 .element-big-content-ico {
     width: 40px;
     margin-bottom: 15px;
+}
+
+.element-big-content-contact {
+    width: 100%;
+    text-align: center;
+
+    .element-wrapper {
+        display: inline-block;
+        padding: 15px;
+        width: 80%;
+        // min-height: 564px;
+
+        @media (min-width: 992px) {
+            padding: 50px;
+            width: 60%;
+        }
+    }
 }
 
 /* ==========================================================
