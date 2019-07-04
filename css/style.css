@@ -320,23 +320,29 @@ a:focus {
       height: 100px;
       align-items: center; } }
 
-.main-nav {
+.nav-main {
+  display: flex;
+  text-align: center;
+  justify-content: center; }
+
+.main-header {
   list-style-type: none;
-  display: none; }
+  display: none;
+  width: 100%; }
   @media (min-width: 768px) {
-    .main-nav {
+    .main-header {
       display: flex;
       flex-direction: row;
       justify-content: flex-end; } }
-  .main-nav li {
+  .main-header li {
     display: flex;
     justify-content: center;
     text-align: center;
-    margin: 15px auto; }
+    margin: 0 0 10px 0; }
     @media (min-width: 768px) {
-      .main-nav li {
-        margin: 15px; } }
-    .main-nav li a {
+      .main-header li {
+        margin: 10px; } }
+    .main-header li a {
       width: 100%;
       white-space: nowrap;
       color: #111111;
@@ -345,14 +351,14 @@ a:focus {
       font-size: 1rem;
       letter-spacing: 4px;
       font-weight: normal; }
-      @media (min-width: 992px) {
-        .main-nav li a {
+      @media (min-width: 768px) {
+        .main-header li a {
           margin-right: 10px; } }
-      .main-nav li a:hover, .main-nav li a:focus {
+      .main-header li a:hover, .main-header li a:focus {
         background: transparent;
         color: #EE6C4D;
         border-bottom-color: #EE6C4D; }
-      .main-nav li a:after {
+      .main-header li a:after {
         content: "";
         display: block;
         height: 2px;
@@ -361,7 +367,7 @@ a:focus {
         opacity: 0;
         transform: translateY(12px);
         transition: all 0.3s ease-in-out; }
-      .main-nav li a:hover:after {
+      .main-header li a:hover:after {
         transform: translateY(0px);
         opacity: 1; }
 
@@ -383,7 +389,7 @@ a:focus {
       width: 231px; } }
   @media (min-width: 992px) {
     .logo {
-      padding-left: 40px;
+      padding-left: 20px;
       padding-right: 0; } }
   .logo img {
     max-width: 100%;
@@ -406,7 +412,7 @@ a:focus {
   list-style-type: none;
   display: none;
   border-left: 1px solid #bbb; }
-  @media (min-width: 768px) {
+  @media (min-width: 992px) {
     .social-header {
       display: flex;
       flex-direction: row;
