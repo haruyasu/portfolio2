@@ -96,34 +96,34 @@
     }
 }
 
-.btn-wapasha {
-    background: $black;
-    color: #ffffff;
-    transition: background-color 0.3s, color 0.3s;
+// .btn-wapasha {
+//     background: $black;
+//     color: #ffffff;
+//     transition: background-color 0.3s, color 0.3s;
 
-    &:before {
-        content: "";
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        border: 2px solid $point-color;
-        z-index: -1;
-        border-radius: inherit;
-        opacity: 0;
-        transform: scale3d(0.6, 0.6, 1);
-        transition: transform 0.3s, opacity 0.3s;
-        transition-timing-function: cubic-bezier(0.75, 0, 0.125, 1);
-    }
+//     &:before {
+//         content: "";
+//         position: absolute;
+//         top: 0;
+//         left: 0;
+//         width: 100%;
+//         height: 100%;
+//         border: 2px solid $point-color;
+//         z-index: -1;
+//         border-radius: inherit;
+//         opacity: 0;
+//         transform: scale3d(0.6, 0.6, 1);
+//         transition: transform 0.3s, opacity 0.3s;
+//         transition-timing-function: cubic-bezier(0.75, 0, 0.125, 1);
+//     }
 
-    &:hover {
-        background-color: transparent;
-        color: $point-color;
+//     &:hover {
+//         background-color: transparent;
+//         color: $point-color;
 
-        &:before {
-            transform: scale3d(1, 1, 1);
-            opacity: 1;
-        }
-    }
-}
+//         &:before {
+//             transform: scale3d(1, 1, 1);
+//             opacity: 1;
+//         }
+//     }
+// }

@@ -149,6 +149,12 @@
     //Begin - Document Ready
     $(document).ready(function () {
 
+        let mainNav = document.getElementById('js-menu');
+        let navBarToggle = document.getElementById('js-navbar-toggle');
+
+        navBarToggle.addEventListener('click', function () {
+            mainNav.classList.toggle('active');
+        });
 
         // //Intro profile - hover
         // var hProfile = $('#profile');
@@ -331,7 +337,7 @@
         });
 
         //bootstrap tooltips
-        $('[data-toggle="tooltip"]').tooltip();
+        // $('[data-toggle="tooltip"]').tooltip();
 
         //End - Document Ready
     });
