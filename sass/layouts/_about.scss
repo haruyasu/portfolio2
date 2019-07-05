@@ -1,49 +1,72 @@
-.about__content__box {
-    margin: 0 0 20px 0;
+.about__wrapper {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    color: $black;
+
+    p {
+        margin: 0;
+    }
 }
 
-.exp-wrap {
-    width: 100%;
-    border-bottom: 1px solid $light;
-    float: left;
-    margin: 0 0 15px 0;
+.about__box {
+    margin: 10px 0;
 
-    .desc {
-        float: left;
-        width: calc(100% - 150px);
+    .about__title {
+        font-size: 25px;
+        margin: 0 0 20px 0;
+    }
 
-        h4 {
-            span {
-                color: $light;
-                font-weight: $ds-font-weight;
+    .about__wrap {
+        display: flex;
+        justify-content: space-between;
+        margin: 0 10px;
+
+        &:not(:last-child) {
+            margin: 0 10px 20px 10px;
+        }
+
+        .desc {
+            p {
+                &:not(:last-child) {
+                    margin: 0 0 5px 0;
+                }
+            }
+
+            &__title {
+                font-size: 17px;
+                font-weight: bold;
+
+                span {
+                    color: $light;
+                }
             }
         }
+    }
 
-        .location {
-            margin-bottom: 0;
+    .progress__box {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        margin: 0 10px;
+    }
+
+    .progress__wrap {
+        width: 48%;
+        &:not(:last-child) {
+            margin: 0 0 20px 0;
         }
-    }
 
-    .year {
-        float: left;
-        margin-top: 16px; 
-        width: 150px;
-        text-align: right;
-    }
-}
-
-.progress-wrap {
-    margin-bottom: 30px;
-
-    h4 {
-        font-size: 18px;
-        margin-bottom: 10px;
+        .progress__title {
+            font-size: 17px;
+            margin: 0 0 10px 0;
+            font-weight: bold;
+        }
     }
 }
 
 .progress {
     height: 4px;
-    -webkit-box-shadow: none;
     box-shadow: none;
     background: $light;
     overflow: visible;
@@ -51,8 +74,7 @@
 }
 
 .progress-bar {
-    background: $main-color;
-    -webkit-box-shadow: none;
+    background: $point-color;
     box-shadow: none;
     line-height: 1.2;
     color: $light;
@@ -76,13 +98,101 @@
         right: 0;
         width: 10px;
         height: 10px;
-        background: $main-color;
+        background: $point-color;
         border-radius: 50%;
     }
 
     .color-1 {
-        background: $main-color;
+        background: $point-color;
     }
 }
+
+
+// .about__content__box {
+//     margin: 0 0 20px 0;
+// }
+
+// .exp-wrap {
+//     width: 100%;
+//     border-bottom: 1px solid $light;
+//     float: left;
+//     margin: 0 0 15px 0;
+
+//     .desc {
+//         float: left;
+//         width: calc(100% - 150px);
+
+//         h4 {
+//             span {
+//                 color: $light;
+//                 font-weight: $ds-font-weight;
+//             }
+//         }
+
+//         .location {
+//             margin-bottom: 0;
+//         }
+//     }
+
+//     .year {
+//         float: left;
+//         margin-top: 16px; 
+//         width: 150px;
+//         text-align: right;
+//     }
+// }
+
+// .progress-wrap {
+//     margin-bottom: 30px;
+
+//     h4 {
+//         font-size: 18px;
+//         margin-bottom: 10px;
+//     }
+// }
+
+// .progress {
+//     height: 4px;
+//     -webkit-box-shadow: none;
+//     box-shadow: none;
+//     background: $light;
+//     overflow: visible;
+//     border-radius: 0;
+// }
+
+// .progress-bar {
+//     background: $main-color;
+//     -webkit-box-shadow: none;
+//     box-shadow: none;
+//     line-height: 1.2;
+//     color: $light;
+//     font-weight: $ds-font-weight;
+//     text-align: right;
+//     position: relative;
+//     overflow: visible;
+//     border-radius: 30px;
+
+//     span {
+//         position: absolute;
+//         top: -34px;
+//         right: 0;
+//         color: $light;
+//     }
+
+//     &:after {
+//         content: "";
+//         position: absolute;
+//         top: -3px;
+//         right: 0;
+//         width: 10px;
+//         height: 10px;
+//         background: $main-color;
+//         border-radius: 50%;
+//     }
+
+//     .color-1 {
+//         background: $main-color;
+//     }
+// }
 
 

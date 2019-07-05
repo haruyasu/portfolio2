@@ -7,37 +7,38 @@
 body {
     background: $white;
     font-family: $ds-font-family;
+    font-size: 16px;
 }
 
 .container {
-    padding-left: 15px;
+    width: 100%;
     padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+
+    @media (min-width: 576px) {
+        max-width: 540px;
+    }
 
     @media (min-width: 768px) {
-        margin-right: auto;
-        margin-left: auto;
-        width: 750px;
+        max-width: 720px;
     }
 
     @media (min-width: 992px) {
-        width: 970px;
+        max-width: 960px;
     }
 
     @media (min-width: 1200px) {
-        width: 1170px;
-    }
-
-    @media (min-width: 1400px) {
-        width: 1400px;
+        max-width: 1140px;
     }
 }
 
-
-p {
-    font-size: $ds-font-size-small;
-    line-height: 22px;
-    margin-bottom: 22px;
-}
+// p {
+//     font-size: $ds-font-size-small;
+//     line-height: 22px;
+//     margin-bottom: 22px;
+// }
 
 #wrapper {
     display: flex;
