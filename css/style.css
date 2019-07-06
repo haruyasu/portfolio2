@@ -1038,21 +1038,17 @@ a:focus {
     background: #EE6C4D; }
 
 .project__section {
-  background: lightsalmon;
   display: flex;
-  flex-direction: column; }
+  flex-direction: column;
+  margin: 0 0 50px 0; }
   .project__section-title {
     margin: 0 0 40px 0; }
     .project__section-title h2 {
       font-size: 25px;
       text-transform: uppercase; }
   .project__section-img {
-    background: lightblue;
-    margin: 0 0 20px 0; }
-    .project__section-img img {
-      width: 100%; }
+    margin: 0 0 50px 0; }
   .project__section-text {
-    background: lightpink;
     display: flex;
     flex-direction: column;
     justify-content: space-between; }
@@ -1060,11 +1056,14 @@ a:focus {
       .project__section-text {
         flex-direction: row; } }
     .project__section-text-info {
-      background: lightcoral;
       display: flex;
       flex-direction: column;
       width: 100%;
       margin: 0 0 20px 0; }
+      .project__section-text-info a {
+        color: #EE6C4D; }
+        .project__section-text-info a:hover {
+          color: #293241; }
       @media (min-width: 768px) {
         .project__section-text-info {
           width: 29%; } }
@@ -1080,15 +1079,17 @@ a:focus {
           letter-spacing: 1px;
           padding: 10px 0;
           text-transform: uppercase; }
+          .project__section-text-info-meta li span {
+            font-weight: bold; }
           .project__section-text-info-meta li i {
             margin-right: 20px;
             font-size: 16px;
             line-height: normal; }
     .project__section-text-detail {
-      background: lightgreen;
       display: flex;
       flex-direction: column;
-      width: 100%; }
+      width: 100%;
+      margin: 0 0 20px 0; }
       @media (min-width: 768px) {
         .project__section-text-detail {
           width: 69%; } }
@@ -1100,6 +1101,114 @@ a:focus {
         padding: 0 0 10px 0; }
       .project__section-text-detail p {
         margin: 0 0 20px 0; }
+
+.owl-page span {
+  transition: all 0.3s ease-in-out; }
+
+.owl-page.active span {
+  background: #293241 !important; }
+
+.project-single-carousel {
+  padding: 3px;
+  overflow: hidden;
+  text-align: center; }
+  .project-single-carousel img {
+    display: inline-block;
+    width: 100%; }
+
+/* clearfix */
+.owl-carousel .owl-wrapper:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0; }
+
+.owl-carousel {
+  display: none;
+  position: relative;
+  width: 100%; }
+
+.owl-carousel .owl-wrapper {
+  display: none;
+  position: relative; }
+
+.owl-carousel .owl-wrapper-outer {
+  overflow: hidden;
+  position: relative;
+  width: 100%; }
+
+.owl-carousel .owl-wrapper-outer.autoHeight {
+  transition: height 500ms ease-in-out; }
+
+.owl-carousel .owl-item {
+  float: left; }
+
+.owl-controls .owl-page,
+.owl-controls .owl-buttons div {
+  cursor: pointer; }
+
+.owl-controls {
+  user-select: none; }
+
+/* mouse grab icon */
+.grabbing {
+  cursor: url(../img/grabbing.png) 8 8, move; }
+
+.owl-theme .owl-controls {
+  margin-top: 10px;
+  text-align: center; }
+
+/* Styling Next and Prev buttons */
+.owl-theme .owl-controls .owl-buttons div {
+  color: #fff;
+  display: inline-block;
+  zoom: 1;
+  margin: 5px;
+  padding: 3px 10px;
+  font-size: 12px;
+  border-radius: 30px;
+  background: #869791;
+  opacity: 0.5; }
+
+/* Clickable class fix problem with hover on touch devices */
+/* Use it for non-touch hover action */
+.owl-theme .owl-controls.clickable .owl-buttons div:hover {
+  opacity: 1;
+  text-decoration: none; }
+
+/* Styling Pagination*/
+.owl-theme .owl-controls .owl-page {
+  display: inline-block;
+  zoom: 1; }
+
+.owl-theme .owl-controls .owl-page span {
+  display: block;
+  width: 12px;
+  height: 12px;
+  margin: 5px 7px;
+  opacity: 0.5;
+  border-radius: 20px;
+  background: #869791; }
+
+.owl-theme .owl-controls .owl-page.active span,
+.owl-theme .owl-controls.clickable .owl-page:hover span {
+  opacity: 1; }
+
+/* If PaginationNumbers is true */
+.owl-theme .owl-controls .owl-page span.owl-numbers {
+  height: auto;
+  width: auto;
+  color: #fff;
+  padding: 2px 10px;
+  font-size: 12px;
+  border-radius: 30px; }
+
+/* preloading images */
+.owl-item.loading {
+  min-height: 150px;
+  background: url(../img/AjaxLoader.gif) no-repeat center center; }
 
 .contact__title {
   font-size: 25px; }
