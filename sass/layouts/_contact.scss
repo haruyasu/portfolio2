@@ -36,12 +36,17 @@ textarea.form-control {
     color: #fff;
     transition: all 0.1s ease-in-out;
     outline: 0;
+    cursor: pointer;
 
     &:hover {
         background-color: $point-color;
         border-color: #fff;
         transition: all 0.1s ease-in-out;
     }
+}
+
+.error {
+    color: red;
 }
 
 .modal-wrap {

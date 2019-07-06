@@ -6,77 +6,69 @@
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <title>Haruyasu Kaitori</title>
 
-        <link href="ref/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+        <!-- <link href="ref/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" /> -->
         <link href="ref/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" />
-        <link href="ref/vendor/animate.css" rel="stylesheet" />
-        <link href="ref/vendor/fancybox/jquery.fancybox.css" rel="stylesheet" />
-        <link href="ref/vendor/owl.carousel/owl-carousel/owl.carousel.css" rel="stylesheet" />
-        <link href="ref/vendor/owl.carousel/owl-carousel/owl.theme.css" rel="stylesheet" />
+        <!-- <link href="ref/vendor/animate.css" rel="stylesheet" /> -->
+        <!-- <link href="ref/vendor/fancybox/jquery.fancybox.css" rel="stylesheet" /> -->
+        <!-- <link href="ref/vendor/owl.carousel/owl-carousel/owl.carousel.css" rel="stylesheet" /> -->
+        <!-- <link href="ref/vendor/owl.carousel/owl-carousel/owl.theme.css" rel="stylesheet" /> -->
 
         <link href="css/style.css" rel="stylesheet" />
     </head>
     <body>
-        <div class="loader-container" id="page-loader">
-            <div class="loading-wrapper loading-wrapper-hide">
-                <div class="loader-animation" id="loader-animation">
-                    <svg class="svg-loader" width="100" height="100">
-                        <circle cx="50" cy="50" r="25" />
-                    </svg>
-                </div>
-                <div class="loader-name" id="loader-name">
-                    <img src="ref/img/logo-negative.png" alt="" />
+        <div id="wrapper">
+            <div class="loader-container" id="page-loader">
+                <div class="loading-wrapper loading-wrapper-hide">
+                    <div class="loader-animation" id="loader-animation">
+                        <svg class="svg-loader" width="100" height="100">
+                            <circle cx="50" cy="50" r="25" />
+                        </svg>
+                    </div>
+                    <div class="loader-name" id="loader-name">
+                        <img src="ref/img/logo-negative.png" alt="" />
+                    </div>
                 </div>
             </div>
-        </div>
 
-        <div
-            id="back-to-top"
-            class="back-to-top back-to-top-hide"
-            data-toggle="tooltip"
-            data-placement="left"
-            title="Back to Top"
-        >
-            <i class="fa fa-angle-up"></i>
-        </div>
+            <div
+                id="back-to-top"
+                class="back-to-top back-to-top-hide"
+                data-toggle="tooltip"
+                data-placement="left"
+                title="Back to Top"
+            >
+                <i class="fa fa-angle-up"></i>
+            </div>
 
-        <header id="header">
-            <nav class="navbar">
-                <div class="container">
-                    <div class="menu-wrapper">
-                        <div class="navbar-header">
-                            <button
-                                type="button"
-                                class="navbar-toggle"
-                                data-toggle="collapse"
-                                data-target=".navbar-main-collapse"
-                            >
-                                <i class="fa fa-bars"></i>
-                            </button>
-                            <a class="navbar-brand" href="index.html">
-                                <img src="ref/img/logo.png" alt="" />
-                            </a>
-                        </div>
-
-                        <div class="collapse navbar-collapse navbar-right navbar-main-collapse" id="#options">
-                            <ul class="nav navbar-nav">
+            <div class="container">
+                <div class="header">
+                    <nav class="navbar">
+                        <span class="navbar-toggle" id="js-navbar-toggle">
+                            <i class="fa fa-bars"></i>
+                        </span>
+                        <a class="logo" href="index.html">
+                            <img src="ref/img/logo.png" alt="" />
+                        </a>
+                        <div class="nav-main">
+                            <ul class="main-header" id="js-menu">
                                 <li>
-                                    <a href="index.html#home">Home</a>
+                                    <a href="index.html#home" class="nav-links">Home</a>
                                 </li>
                                 <li>
-                                    <a href="index.html#about">About</a>
+                                    <a href="index.html#about" class="nav-links">About</a>
                                 </li>
                                 <li>
-                                    <a href="index.html#portfolio">Work</a>
+                                    <a href="index.html#portfolio" class="nav-links">Work</a>
                                 </li>
                                 <li>
-                                    <a href="index.html#contact">Contact</a>
+                                    <a href="index.html#contact" class="nav-links">Contact</a>
                                 </li>
                             </ul>
+
                             <ul class="social-header">
                                 <li>
                                     <a
                                         href="https://www.facebook.com/haruyasu11"
-                                        class="btn-wapasha"
                                         data-toggle="tooltip"
                                         data-placement="top"
                                         title="Facebook"
@@ -87,7 +79,6 @@
                                 <li>
                                     <a
                                         href="https://www.linkedin.com/in/haruyasu-kaitori-1b5436105/"
-                                        class="btn-wapasha"
                                         data-toggle="tooltip"
                                         data-placement="bottom"
                                         title="LinkedIn"
@@ -98,7 +89,6 @@
                                 <li>
                                     <a
                                         href="https://github.com/haruyasu"
-                                        class="btn-wapasha"
                                         data-toggle="tooltip"
                                         data-placement="bottom"
                                         title="GitHub"
@@ -109,7 +99,6 @@
                                 <li>
                                     <a
                                         href="https://twitter.com/hathle"
-                                        class="btn-wapasha"
                                         data-toggle="tooltip"
                                         data-placement="bottom"
                                         title="Twitter"
@@ -120,7 +109,6 @@
                                 <li>
                                     <a
                                         href="https://www.instagram.com/hathle/"
-                                        class="btn-wapasha"
                                         data-toggle="tooltip"
                                         data-placement="bottom"
                                         title="Instagram"
@@ -130,187 +118,114 @@
                                 </li>
                             </ul>
                         </div>
-                    </div>
+                    </nav>
                 </div>
-            </nav>
-        </header>
 
-        <section id="body" class="">
-            <div class="section section-project-single">
-                <div class="container">
-
-                    <div class="project-title-wrapper">
-                        <h1 class="project-title">Portfolio Web Site for VFX</h1>
-                    </div>
-
-                    <div id="project-single-carousel" class="project-single-carousel owl-carousel">
-                        <div class="project-single-carousel-item">
-                            <img src="img/haruvfx1.png" alt="" />
-                        </div>
-                        <div class="project-single-carousel-item">
-                            <img src="img/haruvfx2.png" alt="" />
-                        </div>
-                        <div class="project-single-carousel-item">
-                            <img src="img/haruvfx3.png" alt="" />
-                        </div>
-                        <div class="project-single-carousel-item">
-                            <img src="img/haruvfx4.png" alt="" />
-                        </div>
-                        <div class="project-single-carousel-item">
-                            <img src="img/haruvfx5.png" alt="" />
-                        </div>
-                        <div class="project-single-carousel-item">
-                            <img src="img/haruvfx6.png" alt="" />
-                        </div>
-                    </div>
-
-                    <div class="isotope-filter" id="isotope-filter">
-                        <div class="element element-content element-project-description home">
-                            <div class="element-wrapper">
-                                <div class="element-big-content-ico"><img src="ref/img/ico8b.svg" alt="" /></div>
-                                <h2 class="element-big-content-title">Project Description</h2>
-                                <p>
-                                    Description id elit non mi porta gravida at eget metus. Donec sed odio dui. Maecenas
-                                    faucibus mollis interdum. We responded to the challenge with a service
-                                    <strong>design methodology</strong> in stunning <strong>UI/UX</strong> solutions.
-                                </p>
-                                <p>
-                                    Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Praesent
-                                    commodo cursus magna.
-                                </p>
+                <section id="body">
+                    <div class="section section-project-single">
+                        <div class="container">
+                            <div class="project-title-wrapper">
+                                <h1 class="project-title">Portfolio Web Site for VFX</h1>
                             </div>
-                        </div>
 
-                        <div class="element element-content-2 element-project-infos home">
-                            <div class="element-wrapper">
-                                <div class="element-box">
-                                    <div class="element-box-bg">
-                                        <h2 class="element-box-title"><span>Project Infos</span></h2>
-                                        <div class="element-box-ico2"><img src="ref/img/ico9.svg" alt="" /></div>
-                                        <h3 class="element-box-title2">Client:</h3>
-                                        <p>Dupstudio Agency</p>
-                                        <h3 class="element-box-title2">Category:</h3>
-                                        <p>Branding</p>
-                                        <h3 class="element-box-title2">Year:</h3>
-                                        <p>2016</p>
+                            <div id="project-single-carousel" class="project-single-carousel owl-carousel">
+                                <div class="project-single-carousel-item">
+                                    <img src="img/haruvfx1.png" alt="" />
+                                </div>
+                                <div class="project-single-carousel-item">
+                                    <img src="img/haruvfx2.png" alt="" />
+                                </div>
+                                <div class="project-single-carousel-item">
+                                    <img src="img/haruvfx3.png" alt="" />
+                                </div>
+                                <div class="project-single-carousel-item">
+                                    <img src="img/haruvfx4.png" alt="" />
+                                </div>
+                                <div class="project-single-carousel-item">
+                                    <img src="img/haruvfx5.png" alt="" />
+                                </div>
+                                <div class="project-single-carousel-item">
+                                    <img src="img/haruvfx6.png" alt="" />
+                                </div>
+                            </div>
+
+                            <div class="isotope-filter" id="isotope-filter">
+                                <div class="element element-content element-project-description home">
+                                    <div class="element-wrapper">
+                                        <div class="element-big-content-ico">
+                                            <img src="ref/img/ico8b.svg" alt="" />
+                                        </div>
+                                        <h2 class="element-big-content-title">Project Description</h2>
+                                        <p>
+                                            Description id elit non mi porta gravida at eget metus. Donec sed odio dui.
+                                            Maecenas faucibus mollis interdum. We responded to the challenge with a
+                                            service
+                                            <strong>design methodology</strong> in stunning
+                                            <strong>UI/UX</strong> solutions.
+                                        </p>
+                                        <p>
+                                            Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.
+                                            Praesent commodo cursus magna.
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div class="element element-content-2 element-project-infos home">
+                                    <div class="element-wrapper">
+                                        <div class="element-box">
+                                            <div class="element-box-bg">
+                                                <h2 class="element-box-title"><span>Project Infos</span></h2>
+                                                <div class="element-box-ico2">
+                                                    <img src="ref/img/ico9.svg" alt="" />
+                                                </div>
+                                                <h3 class="element-box-title2">Client:</h3>
+                                                <p>Dupstudio Agency</p>
+                                                <h3 class="element-box-title2">Category:</h3>
+                                                <p>Branding</p>
+                                                <h3 class="element-box-title2">Year:</h3>
+                                                <p>2016</p>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
+                    </div>
+                </section>
+            </div>
 
-                        <!-- <div class="element element-portfolio-item portfolio home">
-                            <div class="element-wrapper">
-                                <div class="portfolio-item">
-                                    <a
-                                        href="single-portfolio.html"
-                                        class="portfolio-thumbnail"
-                                        style="background-image: url('ref/img/portfolio/p7.jpg');"
-                                    >
-                                        <div class="portfolio-description-wrapper">
-                                            <div class="portfolio-description">
-                                                <h2 class="portfolio-title">
-                                                    The Shopping Bag
-                                                    <span class="portfolio-item-ico"
-                                                        ><i class="fa fa-long-arrow-right"></i
-                                                    ></span>
-                                                </h2>
-                                                <span class="see-more">Branding / Featured</span>
-                                            </div>
-                                        </div>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="element element-portfolio-item portfolio home">
-                            <div class="element-wrapper">
-                                <div class="portfolio-item">
-                                    <a
-                                        href="single-portfolio.html"
-                                        class="portfolio-thumbnail"
-                                        style="background-image: url('ref/img/portfolio/p2.jpg');"
-                                    >
-                                        <div class="portfolio-description-wrapper">
-                                            <div class="portfolio-description">
-                                                <h2 class="portfolio-title">
-                                                    The Ceramic Bottle
-                                                    <span class="portfolio-item-ico"
-                                                        ><i class="fa fa-long-arrow-right"></i
-                                                    ></span>
-                                                </h2>
-                                                <span class="see-more">Branding / Featured</span>
-                                            </div>
-                                        </div>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="element element-portfolio-item portfolio home ">
-                            <div class="element-wrapper">
-                                <div class="portfolio-item">
-                                    <a
-                                        href="single-portfolio.html"
-                                        class="portfolio-thumbnail"
-                                        style="background-image: url('ref/img/portfolio/p3.jpg');"
-                                    >
-                                        <div class="portfolio-description-wrapper">
-                                            <div class="portfolio-description">
-                                                <h2 class="portfolio-title">
-                                                    Hipsters Website
-                                                    <span class="portfolio-item-ico"
-                                                        ><i class="fa fa-long-arrow-right"></i
-                                                    ></span>
-                                                </h2>
-                                                <span class="see-more">Web Design / Featured</span>
-                                            </div>
-                                        </div>
-                                    </a>
-                                </div>
-                            </div>
-                        </div> -->
+            <footer id="footer">
+                <div id="footer-bottom">
+                    <div class="container">
+                        <p class="footer-bottom-text2"><span>© 2019, Haruyasu Kaitori. All Rights Reserved.</span></p>
                     </div>
                 </div>
-            </div>
-        </section>
+            </footer>
+        </div>
 
-        <footer id="footer">
-            <div id="footer-bottom">
-                <div class="container">
-                    <p class="footer-bottom-text1">
-                        <a
-                            href="mailto:haruwork20@gmail.com"
-                            data-toggle="tooltip"
-                            data-placement="top"
-                            title="Click to mail us!"
-                            >haruwork20@gmail.com</a
-                        >
-                    </p>
-                    <p class="footer-bottom-text2"><span>© 2019, Haruyasu Kaitori. All Rights Reserved.</span></p>
-                </div>
-            </div>
-        </footer>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.4/imagesloaded.pkgd.min.js"></script>
+        <script src="https://unpkg.com/isotope-layout@2/dist/isotope.pkgd.min.js"></script>
 
-        <script src="ref/vendor/jquery.min.js"></script>
-        <script src="ref/vendor/bootstrap/js/bootstrap.min.js"></script>
-        <script src="ref/vendor/validate.js"></script>
-        <script src="ref/vendor/holder.js"></script>
-        <script src="ref/vendor/owl.carousel/owl-carousel/owl.carousel.js"></script>
-        <script src="ref/vendor/waypoints.min.js"></script>
-        <script src="ref/vendor/count-to.js"></script>
-        <script src="ref/vendor/fancybox/jquery.fancybox.js"></script>
-        <script src="ref/vendor/jquery.nicescroll.min.js"></script>
-        <script src="ref/vendor/jquery.nicescroll.plus.js"></script>
-        <script src="ref/vendor/jquery.countdown.min.js"></script>
-        <script src="ref/vendor/owl.carousel/owl-carousel/owl.carousel.js"></script>
-        <script src="ref/vendor/imagesloaded.pkgd.min.js"></script>
-        <script src="ref/vendor/masonry.pkgd.min.js"></script>
         <script src="ref/vendor/jquery.ba-bbq.min.js"></script>
-        <script src="ref/vendor/jquery.isotope2.min.js"></script>
         <script src="ref/vendor/packery-mode.pkgd.min.js"></script>
-        <script src="ref/vendor/cross-browser.js"></script>
-        <script src="ref/vendor/doubletaptogo.min.js"></script>
-        <script src="ref/vendor/cross-browser.js"></script>
+
+        <!-- contact -->
+        <!-- <script src="ref/vendor/validate.js"></script> -->
+
+        <!-- <script src="ref/vendor/jquery.min.js"></script> -->
+        <!-- <script src="ref/vendor/bootstrap/js/bootstrap.min.js"></script> -->
+        <!-- <script src="ref/vendor/holder.js"></script> -->
+        <!-- <script src="ref/vendor/count-to.js"></script> -->
+        <!-- <script src="ref/vendor/fancybox/jquery.fancybox.js"></script> -->
+        <!-- <script src="ref/vendor/jquery.nicescroll.min.js"></script> -->
+        <!-- <script src="ref/vendor/jquery.nicescroll.plus.js"></script> -->
+        <!-- <script src="ref/vendor/jquery.countdown.min.js"></script> -->
+        <!-- <script src="ref/vendor/masonry.pkgd.min.js"></script> -->
+        <!-- <script src="ref/vendor/doubletaptogo.min.js"></script> -->
+        <!-- <script src="ref/vendor/cross-browser.js"></script> -->
 
         <script src="js/main.js"></script>
     </body>
