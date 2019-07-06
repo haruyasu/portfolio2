@@ -259,7 +259,7 @@ a:focus {
   background: transparent; }
 
 .navbar {
-  font-size: 16px;
+  font-size: 12px;
   margin: 20px 0; }
   @media (min-width: 768px) {
     .navbar {
@@ -287,6 +287,7 @@ a:focus {
     display: flex;
     justify-content: center;
     text-align: center;
+    align-items: center;
     margin: 0 0 10px 0; }
     @media (min-width: 768px) {
       .main-header li {
@@ -369,13 +370,13 @@ a:focus {
     display: flex;
     justify-content: center;
     text-align: center;
+    align-items: center;
     margin: 10px auto; }
     @media (min-width: 768px) {
       .social-header li {
         margin: 10px; } }
     .social-header li a {
       width: 35px;
-      height: 35px;
       color: #111111;
       background-color: transparent !important; }
       .social-header li a:hover {
@@ -571,46 +572,17 @@ a:focus {
 /* ==========================================================
 ! 18. Section: About Elements
 ========================================================== */
-.element-about-picture {
-  width: 100%; }
-
-.element-about-picture .element-wrapper {
-  min-height: 279px; }
-
-@media (min-width: 768px) {
-  .element-about-picture {
-    width: 50%; } }
-
-@media (min-width: 992px) {
-  .element-about-picture {
-    width: 25%; } }
-
-.element-about-picture .element-wrapper {
-  min-height: 279px; }
-
-.element-about-picture .element-wrapper {
-  height: 279px;
-  overflow: hidden; }
-
 .element-services {
   width: 100%; }
-
-.element-services .element-wrapper {
-  min-height: 279px; }
-
-@media (min-width: 768px) {
-  .element-services {
-    width: 50%; } }
-
-@media (min-width: 992px) {
-  .element-services {
-    width: 25%; } }
-
-.element-services .element-wrapper {
-  min-height: 279px; }
-
-.element-services .element-wrapper {
-  padding: 10px; }
+  @media (min-width: 768px) {
+    .element-services {
+      width: 50%; } }
+  @media (min-width: 992px) {
+    .element-services {
+      width: 25%; } }
+  .element-services .element-wrapper {
+    min-height: 279px;
+    padding: 10px; }
 
 .element-box {
   display: block;

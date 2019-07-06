@@ -221,51 +221,22 @@
 /* ==========================================================
 ! 18. Section: About Elements
 ========================================================== */
-.element-about-picture {
-    width: 100%;
-}
-.element-about-picture .element-wrapper {
-    min-height: 279px;
-}
-@media (min-width: 768px) {
-    .element-about-picture {
-        width: 50%;
-    }
-}
-@media (min-width: 992px) {
-    .element-about-picture {
-        width: 25%;
-    }
-}
-.element-about-picture .element-wrapper {
-    min-height: 279px;
-}
-.element-about-picture .element-wrapper {
-    height: 279px;
-    overflow: hidden;
-}
+
 
 .element-services {
     width: 100%;
-}
-.element-services .element-wrapper {
-    min-height: 279px;
-}
-@media (min-width: 768px) {
-    .element-services {
+
+    @media (min-width: 768px) {
         width: 50%;
     }
-}
-@media (min-width: 992px) {
-    .element-services {
+    @media (min-width: 992px) {
         width: 25%;
+    } 
+
+    .element-wrapper {
+        min-height: 279px;
+        padding: 10px;
     }
-}
-.element-services .element-wrapper {
-    min-height: 279px;
-}
-.element-services .element-wrapper {
-    padding: 10px;
 }
 
 

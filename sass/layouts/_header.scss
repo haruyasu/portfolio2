@@ -1,5 +1,5 @@
 .navbar {
-    font-size: 16px;
+    font-size: 12px;
     margin: 20px 0;
 
     @media (min-width: 768px) {
@@ -32,6 +32,7 @@
         display: flex;
         justify-content: center;
         text-align: center;
+        align-items: center;
         margin: 0 0 10px 0;
 
         @media (min-width: 768px) {
@@ -144,6 +145,7 @@
         display: flex;
         justify-content: center;
         text-align: center;
+        align-items: center;
         margin: 10px auto;
 
         @media (min-width: 768px) {
@@ -152,7 +154,6 @@
 
         a {
             width: 35px;
-            height: 35px;
             color: $black;
             background-color: transparent !important;
 
