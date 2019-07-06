@@ -1268,6 +1268,40 @@ a:focus {
   .about__box .about__title {
     font-size: 25px;
     margin: 0 0 20px 0; }
+  .about__box .profile__wrap {
+    display: flex;
+    flex-direction: column; }
+    .about__box .profile__wrap .social {
+      list-style: none;
+      margin: 30px 0 0 0; }
+      .about__box .profile__wrap .social li {
+        color: #979797;
+        display: inline-block; }
+        .about__box .profile__wrap .social li:after {
+          content: "/";
+          display: inline-block;
+          vertical-align: middle; }
+        .about__box .profile__wrap .social li:last-of-type:after {
+          display: none; }
+        .about__box .profile__wrap .social li a {
+          display: inline-block;
+          overflow: hidden;
+          color: #979797;
+          vertical-align: middle; }
+          .about__box .profile__wrap .social li a span {
+            position: relative;
+            display: inline-block;
+            transition: transform 0.3s cubic-bezier(0.85, 0.135, 0.15, 0.5); }
+            .about__box .profile__wrap .social li a span:before {
+              position: absolute;
+              top: 200%;
+              content: attr(data-hover);
+              transform: translate3d(0, 0, 0);
+              color: #111111; }
+          .about__box .profile__wrap .social li a:hover, .about__box .profile__wrap .social li a:focus {
+            opacity: 1; }
+            .about__box .profile__wrap .social li a:hover span, .about__box .profile__wrap .social li a:focus span {
+              transform: translateY(-200%); }
   .about__box .about__wrap {
     display: flex;
     justify-content: space-between; }
