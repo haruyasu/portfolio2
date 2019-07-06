@@ -68,7 +68,7 @@
         $container.isotope({
             itemSelector: '.element',
             resizable: false,
-            transitionDuration: '0.4s',
+            transitionDuration: '0.3s',
             layoutMode: 'packery'
         });
     });
