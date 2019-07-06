@@ -1,3 +1,14 @@
+.contact__title {
+    font-size: 25px;
+}
+
+.contact {
+    input,
+    textarea {
+        outline: 0;
+    }
+}
+
 .form-control {
     width: 100% !important;
     border-radius: 6px;
@@ -8,9 +19,30 @@
 }
 
 textarea.form-control {
-    min-height: 100px;
+    min-height: 200px;
 }
 
+.form-send {
+    display: flex;
+    justify-content: center;
+}
+
+.btn-submit {
+    width: 50%;
+    height: 36px;
+    border-radius: 18px;
+    background-color: $main-color;
+    border: solid 1px transparent;
+    color: #fff;
+    transition: all 0.1s ease-in-out;
+    outline: 0;
+
+    &:hover {
+        background-color: $point-color;
+        border-color: #fff;
+        transition: all 0.1s ease-in-out;
+    }
+}
 
 .modal-wrap {
     visibility: hidden;
@@ -54,7 +86,48 @@ textarea.form-control {
     }
 }
 
-#contactError .modal-title {
-    color: #fff;
+// #contactError .modal-title {
+//     color: #fff;
+// }
+
+.element-contact-form {
+    height: 564px;
+
+    .form-group {
+        position: relative;
+    }
+
+    .form-control {
+        width: 100% !important;
+        border-radius: 0px;
+        height: 50px;
+        // font-size: 14px;
+        color: $black;
+        margin-bottom: 5px;
+        background-color: transparent;
+        border: 2px solid transparent;
+        border-bottom: 1px solid $black;
+        box-shadow: 0 0 0 0 rgba(50, 50, 50, 0.3);
+        transition: all 0.4s ease-in-out;
+        position: relative;
+        padding-left: 20px;
+
+        &:focus {
+            border-left: 2px solid $black;
+        }
+    }
 }
 
+
+
+// .element-contact-form .form-send {
+//     margin-bottom: 0;
+// }
+// .element-contact-form .form-send button {
+//     width: 100% !important;
+//     height: 60px;
+//     margin-bottom: 0;
+// }
+// .element-contact-form .form-send button:before {
+//     padding-top: 20px;
+// }

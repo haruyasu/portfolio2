@@ -47,9 +47,9 @@
                 $('#back-to-top').addClass('back-to-top-hide');
             }
         },
-        {
-            offset: '-400px'
-        });
+            {
+                offset: '-400px'
+            });
 
         function backToTop() {
             $('html, body').animate({
