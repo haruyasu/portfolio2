@@ -146,27 +146,14 @@
 ========================================================== */
 
 .element-profile {
-    @media (min-width: 992px) {
-        width: 100%;
-    }
-
-    .element-wrapper {
-        @media (min-width: 992px) {
-            min-height: 279px;
-        }
-    }
-}
-
-.profileAnimation {
-    transition: all 0.5s ease-in-out;
+    width: 100%;
 }
 
 .profile {
     position: relative;
-    width: 100%;
     overflow: hidden;
-    background: #111;
 }
+
 .profile-hover .profile-mask {
     opacity: 0;
 }

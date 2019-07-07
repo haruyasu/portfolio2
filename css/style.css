@@ -232,32 +232,6 @@ a:focus {
     stroke-dasharray: 0, 301.59289;
     animation: stroke-dash 2000ms linear infinite, stroke-width 2000ms linear infinite, stroke-color 8000ms steps(4) infinite; }
 
-.owl-carousel * {
-  will-change: transform; }
-
-.owl-controls-wrapper2:hover .owl-controls {
-  opacity: 1; }
-
-.owl-controls-wrapper2 .owl-controls {
-  opacity: 0.4;
-  transition: all 0.3s ease-in-out;
-  width: 100%;
-  position: absolute;
-  top: auto;
-  bottom: 0;
-  left: 0;
-  padding: 5px;
-  padding-left: 20px;
-  padding-right: 20px;
-  background: rgba(0, 0, 0, 0.4);
-  color: #ffffff !important; }
-
-.owl-controls-wrapper2 .owl-controls a {
-  color: #ffffff !important; }
-
-.owl-controls-wrapper2 .owl-controls .owl-page.active {
-  background: transparent; }
-
 .navbar {
   font-size: 12px;
   margin: 20px 0; }
@@ -510,22 +484,12 @@ a:focus {
 /* ==========================================================
 ! 17. Section: Home Elements
 ========================================================== */
-@media (min-width: 992px) {
-  .element-profile {
-    width: 100%; } }
-
-@media (min-width: 992px) {
-  .element-profile .element-wrapper {
-    min-height: 279px; } }
-
-.profileAnimation {
-  transition: all 0.5s ease-in-out; }
+.element-profile {
+  width: 100%; }
 
 .profile {
   position: relative;
-  width: 100%;
-  overflow: hidden;
-  background: #111; }
+  overflow: hidden; }
 
 .profile-hover .profile-mask {
   opacity: 0; }
@@ -1202,6 +1166,7 @@ textarea.form-control {
   min-height: 200px; }
 
 .form-send {
+  margin: 30px 0 0 0;
   display: flex;
   justify-content: center; }
 
