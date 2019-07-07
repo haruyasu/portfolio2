@@ -12,14 +12,14 @@
         $('#loader-name').addClass('loader-up');
         $('#loader-animation').addClass('loader-up');
         return false;
-    }, 500);
+    }, 100);
 
     setTimeout(function () {
         $('#page-loader').addClass('loader-out');
         return false;
-    }, 1100);
+    }, 300);
 
-    $('#page-loader').delay(1600).fadeOut(10);
+    $('#page-loader').delay(800).fadeOut(10);
 
     //Owl Carousel
     // >> Project Single
