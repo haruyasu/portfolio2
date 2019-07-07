@@ -381,9 +381,6 @@ a:focus {
   opacity: 0.5;
   font-size: 0.875rem; }
 
-/* ==========================================================
-! 16. Section: Elements - General
-========================================================== */
 .element {
   padding: 3px; }
   .element .element-wrapper {
@@ -481,9 +478,6 @@ a:focus {
         padding: 50px;
         width: 60%; } }
 
-/* ==========================================================
-! 17. Section: Home Elements
-========================================================== */
 .element-profile {
   width: 100%; }
 
@@ -534,9 +528,6 @@ a:focus {
     transform: translateX(60px);
     opacity: 0; } }
 
-/* ==========================================================
-! 18. Section: About Elements
-========================================================== */
 .element-services {
   width: 100%; }
   @media (min-width: 768px) {
@@ -697,9 +688,6 @@ a:focus {
   margin-bottom: 8px;
   letter-spacing: -1px; }
 
-/* ==========================================================
-! 19. Section: Portfolio Elements
-========================================================== */
 .element-portfolio-filter {
   width: 100%; }
   .element-portfolio-filter .element-wrapper {
