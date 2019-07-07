@@ -95,20 +95,14 @@
 .logo {
     display: block;
     height: auto;
-    width: 140px;
-
+    width: 100px;
+    padding-left: 20px;
 
     @media (min-width: 768px) {
-        width: 231px;
+        width: 120px;
     }
 
-
-    @media (min-width: 992px) {
-        padding-left: 20px;
-        padding-right: 0;
-    }
-
-    img {
+    img, svg {
         max-width: 100%;
         opacity: 0.8;
     }
