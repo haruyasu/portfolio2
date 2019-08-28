@@ -421,16 +421,15 @@
 
         a {
             color: $black;
-            padding: 10px;
-            padding-left: 15px;
-            padding-right: 15px;
+            padding: 5px;
             border: 1px solid $black;
             transition: all 0.3s ease-in-out;
             letter-spacing: 2px;
+            font-size: 12px;
 
             @media (min-width: 992px) {
                 letter-spacing: 6px;
-                font-size: 12px;
+                padding: 5px 10px;
                 text-transform: uppercase;
             }
 
@@ -570,7 +569,7 @@
         background: $point-color;
         text-align: center;
         width: 100%;
-        padding: 25px 15px;
+        padding: 10px 15px;
         margin-bottom: 0;
         text-align: left;
         font-size: 16px;
