@@ -310,7 +310,7 @@ a:focus {
   margin-left: 20px; }
   @media (min-width: 768px) {
     .logo {
-      width: 120px; } }
+      width: 80px; } }
   .logo img, .logo svg {
     max-width: 100%;
     opacity: 0.8;
